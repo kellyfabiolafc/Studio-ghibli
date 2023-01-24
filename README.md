@@ -349,10 +349,9 @@ Como mínimo, tu implementación debe:
 
 1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista,
    etc.
-2. Permitir al usuario interactuar para obtener la infomación que necesita.
-3. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
+2. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
    tamaños de pantallas: móviles, tablets y desktops.
-4. Que la interfaz siga los fundamentos de _visual design_.
+3. Que la interfaz siga los fundamentos de _visual design_.
 
 ### Pruebas unitarias
 
