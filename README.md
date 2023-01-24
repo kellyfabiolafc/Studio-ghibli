@@ -268,7 +268,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 - [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
 
-- [ ] **Seguir los principios básicos de diseño visual**
+- [ ] **[Seguir los principios básicos de diseño visual](https://coda.io/d/Bootcamp-UX-Contenido_dqkqk2rV9Z2/Diseno-Visual_suOT7#_luWsQ)**
 
 ### Investigación
 
