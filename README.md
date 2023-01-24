@@ -365,6 +365,26 @@ Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
 (_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
 en la sección de [Consideraciones técnicas](#srcdatajs).
 
+### Checklist
+
+* [ ] Usa VanillaJS.
+* [ ] Pasa linter (`npm run pretest`)
+* [ ] Pasa tests (`npm test`)
+* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+  lines y branches.
+* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
+* [ ] Incluye historias de usuario en `README.md`.
+* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+  `README.md`.
+* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+  en `README.md`.
+* [ ] Incluye el listado de problemas que detectaste a través de tests de
+  usabilidad en el `README.md`.
+* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
+* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
+* [ ] UI: Permite filtrar data en base a una condición.
+* [ ] UI: Es _responsive_.
+
 ## 6. Hacker edition
 
 Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
@@ -595,23 +615,4 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [Cómo dividir H.U.](https://www.youtube.com/watch?v=Ueq786iZ30I&t=341s)
 * [Guía para Data Lovers](https://docs.google.com/presentation/d/e/2PACX-1vQhx9D36NjpH-Daea-ITPUDUzNL8ZiNAprq_7b5PSUrfutk45tEtaOLz2lmd8f54_5jX1hypDM8f8SM/pub?start=false&loop=false&delayms=60000)
 
-## 9. Checklist
 
-* [ ] Usa VanillaJS.
-* [ ] Pasa linter (`npm run pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
-* [ ] UI: Es _responsive_.
