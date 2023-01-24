@@ -62,7 +62,7 @@ Estos son datos que te proponemos:
 
 * [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
   Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. [API Rick and Morty](https://rickandmortyapi.com).
+  Morty.
   - [Investigación con seguidores de Rick and Morty](src/data/rickandmorty/README.md)
 
 * [Juegos Olímpicos de Río de Janeiro](src/data/athletes/athletes.json).
