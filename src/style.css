@@ -1,0 +1,91 @@
+header {
+  background-color: #00796b;
+  color: #fdfffd;
+  font-size: 300%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+header img {
+  width: 250px;
+  height: 300px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #e7f6f4;
+}
+
+.peliculas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+.peliculas-grid img {
+   width: 400px;
+  height: 400px;
+  margin: 20px;
+  /*width: calc(20%);*/
+}
+.pelicula .info {
+  display: none;
+}
+.pelicula {
+  position: relative;
+}
+
+.pelicula-img-container {
+  position: relative;
+}
+
+.pelicula-img-container img {
+  display: block;
+  width: 100%;
+}
+
+.pelicula-img-container .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.pelicula-img-container .info p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.pelicula-img-container .info p span {
+  font-weight: bold;
+}
+/* 
+@media (max-width: 575.98px) {
+  header {
+    background-color: red;
+  }
+  #pelicula img {
+    width: 250px;
+    height: 100px;
+   width: calc(80%);
+  }
+}
+@media (max-width: 991.98px) { 
+ 
+  #peliculas img {
+    width: 250px;
+    height: 500px;
+    width: calc(40%);
+  }
+
+}*/
+
