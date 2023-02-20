@@ -1,9 +1,12 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
+export const exfilterData = () => {
   return 'example';
 };
 
-export const anotherExample = () => {
+export const sortData = () => {
+  return 'OMG';
+};
+export const computeStats = () => {
   return 'OMG';
 };
