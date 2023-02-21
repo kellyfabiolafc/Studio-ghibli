@@ -1,0 +1,97 @@
+header {
+  background-color: #00796b;
+  color: #fdfffd;
+  font-size: 300%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  font-family: "Phudu";
+}
+
+header img {
+  width: 350px;
+  height: 300px;
+}
+h2 {
+  font-family: "Abel";
+  text-align: center;
+  margin-top: 2%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #e7f6f4;
+}
+
+.peliculas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  font-family: "Rubik";
+  margin: 10%;
+}
+.pelicula {
+  position: relative;
+  text-align: center;
+}
+.pelicula-img-container {
+  position: relative;
+}
+
+.pelicula-img-container img {
+  display: block;
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+}
+
+.pelicula-img-container .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background-color: rgba(14, 18, 17, 0.8);
+  display: none;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  padding: 30px;
+  scrollbar-color: #ff69b4;
+  scrollbar-width: thin;
+}
+
+.pelicula-img-container .info p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.pelicula-img-container .info p span {
+  font-weight: bold;
+}
+/* 
+@media (max-width: 575.98px) {
+  header {
+    background-color: red;
+  }
+  #pelicula img {
+    width: 250px;
+    height: 100px;
+   width: calc(80%);
+  }
+}
+@media (max-width: 991.98px) { 
+ 
+  #peliculas img {
+    width: 250px;
+    height: 500px;
+    width: calc(40%);
+  }
+
+}*/
