@@ -1,12 +1,11 @@
-
 /*código que tenga que ver con mostrar los datos en la pantalla. Con esto nos referimos básicamente a la interacción con el DOM. Operaciones 
 como creación de nodos, registro de manejadores de eventos*/
-import data from './data/ghibli/ghibli.js';
+import data from "./data/ghibli/ghibli.js";
 
-const peliculasContainer = document.querySelector('.peliculas-grid');
+const peliculasContainer = document.querySelector(".peliculas-grid");
 for (const pelicula of data.films) {
-  const peliculaElem = document.createElement('div');
-  peliculaElem.className = 'pelicula';
+  const peliculaElem = document.createElement("div");
+  peliculaElem.className = "pelicula";
   peliculaElem.innerHTML = `
     <h2 class="titulo">${pelicula.title}</h2>
     <div class="pelicula-img-container">
@@ -20,12 +19,15 @@ for (const pelicula of data.films) {
       </div>
     </div>
   `;
-  peliculaElem.addEventListener('click', () => {
-    peliculaElem.querySelector('.info').style.display = 'block';
+  peliculaElem.addEventListener("mouseenter", () => {
+    peliculaElem.querySelector(".info").style.display = "block";
   });
+  peliculaElem
+    .querySelector(".pelicula-img-container")
+    .addEventListener("mouseleave", () => {
+      peliculaElem.querySelector(".info").style.display = "none";
+    });
   peliculasContainer.appendChild(peliculaElem);
 }
 
 //console.log(data.films);
-
-
