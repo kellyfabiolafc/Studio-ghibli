@@ -39,22 +39,27 @@ const mostrarAnimaciones = (data) => {
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
       btn.addEventListener("click", function (e) {
         const peliculasContainer2 = document.querySelector(".peliculas-grid");
+        peliculasContainer2.innerHTML = ''
+        const h1 = document.createElement('h1')
         const personajes = filterOfdata(data, e.target.id); // arreglo de personajes
-        peliculasContainer2.innerHTML = "";
-        personajes.forEach((personaje) => {
+        h1.textContent = personajes.title
+        peliculasContainer2.appendChild(h1)
+        
+        personajes.characters.forEach((personaje) => {
           const personajeElem = document.createElement("div");
           personajeElem.className = "Stadia";
+        
           personajeElem.innerHTML = `<h2 class="titulo">${personaje.name}</h2>
-          <div class="personajes-img-container">
+          <article class="personajes-img-container">
             <img src="${personaje.img}" alt="${personaje.name}">
-            <div class="info">
+            <article class="info">
               <p>Gender: <span class="gender">${personaje.gender}</span></p>
               <p>Age: <span class="age">${personaje.age}</span></p>
               <p>Eye Color: <span class="eye-color">${personaje.eye_color}</span></p>
               <p>Hair Color: <span class="hair-color">${personaje.hair_color}</span></p>
               <p>Species: <span class="species">${personaje.specie}</span></p>
-            </div>
-          </div>
+            </article>
+          </article>
         `;
           personajeElem.addEventListener("mouseenter", () => {
             personajeElem.querySelector(".info").style.display = "block";
