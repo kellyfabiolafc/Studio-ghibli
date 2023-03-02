@@ -1,12 +1,15 @@
 // estas funciones son de ejemplo
-
-export const exfilterData = () => {
-  return 'example';
+export const filterOfdata = (data,id) => {
+// console.log(data,id);
+  const peoplefilter= data.filter(film=> film.id === id)
+  //console.log(peoplefilter[0].people);
+  return peoplefilter[0].people; //array de personajes
+  
 };
 
-export const sortData = () => {
+export const sortData= () => {
   return 'OMG';
 };
-export const computeStats = () => {
+/*export const computeStats = () => {
   return 'OMG';
-};
+};*/
