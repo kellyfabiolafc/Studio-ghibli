@@ -68,7 +68,9 @@ body {
   scrollbar-color: #ff69b4;
   scrollbar-width: thin;
 }
-
+.personajes{
+  display:block;
+}
 .pelicula-img-container .info p {
   margin: 0;
   line-height: 1.5;
@@ -77,6 +79,7 @@ body {
 .pelicula-img-container .info p span {
   font-weight: bold;
 }
+
 
 @media (max-width: 575.98px) {
   header {
@@ -118,3 +121,19 @@ body {
     margin: 1%;
   }
 }
+.personajeS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  font-family: "Rubik";
+  margin: 10%;
+}
+.personajes-img-container img {
+  display: block;
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+}
+
