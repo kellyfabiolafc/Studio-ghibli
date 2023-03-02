@@ -46,12 +46,9 @@ body {
 
 .pelicula-img-container img {
   display: block;
-
   width: 320px;
   height: 400px;
   margin: 20px;
- 
-
 }
 
 .pelicula-img-container .info {
@@ -70,7 +67,6 @@ body {
   padding: 30px;
   scrollbar-color: #ff69b4;
   scrollbar-width: thin;
-
 }
 .personajes{
   display:block;
@@ -86,7 +82,6 @@ body {
 
 
 @media (max-width: 575.98px) {
- 
   header {
     font-size: 200%;
     width: 100%;
@@ -95,7 +90,6 @@ body {
     justify-content: center;
     height: 200px;
     font-family: "Phudu";
-    
   }
   header img {
     width: 200px;
@@ -104,7 +98,7 @@ body {
   #pelicula img {
     width: 250px;
     height: 100px;
-   width: calc(80%);
+    width: calc(80%);
   }
   .peliculas-grid {
     display: flex;
@@ -115,7 +109,17 @@ body {
     font-family: "Rubik";
     margin: 10%;
   }
- 
+}
+@media (max-width: 991.98px) {
+  .peliculas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    font-family: "Rubik";
+    margin: 1%;
+  }
 }
 .personajeS {
   display: flex;
@@ -132,4 +136,5 @@ body {
   height: 400px;
   margin: 20px;
 }
+
 
