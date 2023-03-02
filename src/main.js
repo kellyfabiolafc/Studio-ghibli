@@ -3,7 +3,6 @@ como creación de nodos, registro de manejadores de eventos*/
 import data from "./data/ghibli/ghibli.js";
 import { filterOfdata } from "./data.js";
 
-
 const mostrarAnimaciones = (data) => {
   const peliculasContainer = document.querySelector(".peliculas-grid");
   for (const pelicula of data) {
@@ -33,12 +32,12 @@ const mostrarAnimaciones = (data) => {
       });
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
       btn.addEventListener("click", function (e) {
-        const peliculasContainer2= document.querySelector(".peliculas-grid")
+        const peliculasContainer2 = document.querySelector(".peliculas-grid");
         const personajes = filterOfdata(data, e.target.id); // arreglo de personajes
-        peliculasContainer2.innerHTML= ''
+        peliculasContainer2.innerHTML = "";
         personajes.forEach((personaje) => {
           const personajeElem = document.createElement("div");
-          personajeElem.className="Stadia";
+          personajeElem.className = "Stadia";
           personajeElem.innerHTML = `<h2 class="titulo">${personaje.name}</h2>
           <div class="personajes-img-container">
             <img src="${personaje.img}" alt="${personaje.name}">
@@ -51,11 +50,11 @@ const mostrarAnimaciones = (data) => {
             </div>
           </div>
         `;
-          personajeElem.addEventListener('mouseenter', () => {
-            personajeElem.querySelector('.info').style.display = 'block';
+          personajeElem.addEventListener("mouseenter", () => {
+            personajeElem.querySelector(".info").style.display = "block";
           });
-          personajeElem.addEventListener('mouseleave', () => {
-            personajeElem.querySelector('.info').style.display = 'none';
+          personajeElem.addEventListener("mouseleave", () => {
+            personajeElem.querySelector(".info").style.display = "none";
           });
           peliculasContainer2.appendChild(personajeElem);
         });
