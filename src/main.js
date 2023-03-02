@@ -1,7 +1,7 @@
 /*código que tenga que ver con mostrar los datos en la pantalla. Con esto nos referimos básicamente a la interacción con el DOM. Operaciones 
 como creación de nodos, registro de manejadores de eventos*/
 import data from "./data/ghibli/ghibli.js";
-import { filterOfdata } from "./data.js";
+import { filterOfdata} from "./data.js";
 
 const mostrarAnimaciones = (data) => {
   const peliculasContainer = document.querySelector(".peliculas-grid");
@@ -21,10 +21,16 @@ const mostrarAnimaciones = (data) => {
           <button id='${pelicula.id}' class='btnpersonajes'>Personajes</button>
         </div>
       </div>
-    `;
+    </div>
+  `;
     peliculaElem.addEventListener("mouseenter", () => {
       peliculaElem.querySelector(".info").style.display = "block";
     });
+    peliculaElem
+      .querySelector(".pelicula-img-container")
+      .addEventListener("mouseleave", () => {
+        peliculaElem.querySelector(".info").style.display = "none";
+      });
     peliculaElem
       .querySelector(".pelicula-img-container")
       .addEventListener("mouseleave", () => {
