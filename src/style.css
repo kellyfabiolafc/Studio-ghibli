@@ -68,8 +68,17 @@ body {
   scrollbar-color: #ff69b4;
   scrollbar-width: thin;
 }
+.peliculas-grid.h1{
+  align-items:first baseline;
+  padding-top: 100px;
+  font-family: "Phudu";
+  margin: 10%;
+
+
+}
 .personajes{
   display:block;
+
 }
 .pelicula-img-container .info p {
   margin: 0;
@@ -78,6 +87,19 @@ body {
 
 .pelicula-img-container .info p span {
   font-weight: bold;
+}
+.btnpersonajes{
+ 
+  background: #ff69b4;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 50px;
+  width: 120px;
+  align-items: flex-start;
+  margin: 10px 20px;
+  height: 50px;
+  font-family: "Phudu";
+
 }
 
 
