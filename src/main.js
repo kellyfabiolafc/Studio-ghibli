@@ -40,15 +40,12 @@ const mostrarAnimaciones = (data) => {
       btn.addEventListener("click", function (e) {
         const peliculasContainer2 = document.querySelector(".peliculas-grid");
         peliculasContainer2.innerHTML = ''
-        const h1 = document.createElement('h1')
+        const h1 = document.getElementById('Encabezado')
         const personajes = filterOfdata(data, e.target.id); // arreglo de personajes
-        h1.textContent = personajes.title
-        peliculasContainer2.appendChild(h1)
-        
+        h1.textContent = "Personajes de la animación: " + personajes.title
         personajes.characters.forEach((personaje) => {
           const personajeElem = document.createElement("div");
           personajeElem.className = "Stadia";
-        
           personajeElem.innerHTML = `<h2 class="titulo">${personaje.name}</h2>
           <article class="personajes-img-container">
             <img src="${personaje.img}" alt="${personaje.name}">
