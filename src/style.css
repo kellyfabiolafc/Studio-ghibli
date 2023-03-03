@@ -22,19 +22,16 @@ h2 {
   text-align: center;
   margin-top: 2%;
 }
-/*.ContenedorDeencabezado{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  
-}*/
+
 #Encabezado{
   font-family: "Abel";
   text-align: center;
   font-size: 35px;
   background-image: linear-gradient(rgb(77, 139, 95), rgb(33, 22, 30));
-  width: 79%;
+  width:85%;
   margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
  color: white;
  text-shadow: 2px 2px 5px rgb(28, 80, 8);
 
@@ -44,11 +41,9 @@ h2 {
 body {
   margin: 0px;
   padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;;
   background-color: #C7DFDF;
   font-family: "Abel";
+  
 }
 
 
