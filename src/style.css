@@ -91,10 +91,22 @@ body {
 .personajes-img-container {
   position: relative;
 }
-.personajes{
-  display:block;
-}
+.personajes-img-container .info{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  right: 20px;
+  color: white;
+  background-color: rgba(14, 18, 17, 0.8);
+  display: none;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  padding-top: 8em;
 
+}
 .pelicula-img-container .info p {
   margin: 0;
   line-height: 1.5;
