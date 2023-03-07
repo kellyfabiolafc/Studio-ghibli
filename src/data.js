@@ -10,8 +10,20 @@ export const filterOfdata = (data, id) => {
     characters: peoplefilter[0].people,
   };
 };
+export const sortData = (data) => {
+  const sortedData = data.sort((a, b) => b.release_date - a.release_date);
+  return sortedData
+};
+export const sortData2=(data)=>{ 
+  const a_z=data.sort((a, b) => a.title.localeCompare(b.title));
+  return a_z
+};
+export const sortData3 =(data)=>{
+  const menorAmayor=data.sort((a, b) => a.release_date - b.release_date);
+  return menorAmayor
+};
+export const sortData4 =(data)=>{
+  const z_a=data.sort((a, b) => b.title.localeCompare(a.title));
+  return z_a
+};
 
-
-/*export const computeStats = () => {
-  return 'OMG';
-};*/
