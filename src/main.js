@@ -130,9 +130,6 @@ const mostrarAnimaciones = (data) => {
         });
       });
     });
-
-
-  
     peliculasContainer.appendChild(peliculaElem);
   }
 };
