@@ -50,6 +50,18 @@ body {
   font-family: "Rubik";
   margin: 4%;
 }
+
+nav { 
+  text-align: center;
+  background: #ff69b4;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 250px;
+  font-family: "Phudu";
+  margin:auto ;
+ 
+}
 .pelicula-img-container {
   position: relative;
 }
