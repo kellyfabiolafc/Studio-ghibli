@@ -9,9 +9,9 @@ header {
   height: 250px;
   font-family: "Phudu";
 }
-#subtitulo-general{
+#subtitulo-general {
   font-size: 200%;
-  margin:2%;
+  margin: 2%;
 }
 header img {
   width: 350px;
@@ -23,36 +23,33 @@ h2 {
   margin-top: 2%;
 }
 
-#Encabezado{
+#Encabezado {
   font-family: "Abel";
   text-align: center;
   font-size: 35px;
   background-image: linear-gradient(rgb(77, 139, 95), rgb(33, 22, 30));
-  width:85%;
+  width: 85%;
   margin-top: 2%;
   margin-left: auto;
   margin-right: auto;
- color: white;
- text-shadow: 2px 2px 5px rgb(28, 80, 8);
+  color: white;
+  text-shadow: 2px 2px 5px rgb(28, 80, 8);
 }
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #C7DFDF;
+  background-color: #c7dfdf;
   font-family: "Abel";
-  
 }
 
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;;
+  justify-content: space-evenly;
   align-items: center;
   font-family: "Rubik";
   margin: 4%;
 }
-
-
 .pelicula-img-container {
   position: relative;
 }
@@ -79,17 +76,17 @@ body {
   text-align: center;
   padding: 30px;
 }
-.vehiculos-img-container{
+.vehiculos-img-container {
   position: relative;
 }
-.vehiculos-img-container img{
+.vehiculos-img-container img {
   display: block;
   width: 320px;
   height: 400px;
   margin: 20px;
 }
 
-.vehiculos-img-container .info{
+.vehiculos-img-container .info {
   position: absolute;
   top: 0;
   left: 20px;
@@ -104,17 +101,17 @@ body {
   text-align: center;
   padding: 20%;
 }
-.vehiculos-img-container .info p{
+.vehiculos-img-container .info p {
   margin: 0;
   line-height: 1.5;
 }
-.vehiculos-img-container .info p span{
+.vehiculos-img-container .info p span {
   font-weight: bold;
 }
 .personajes-img-container {
   position: relative;
 }
-.pelicula-img-container button{
+.pelicula-img-container button {
   background: #ff69b4;
   color: #fff;
   padding: 10px 10px;
@@ -123,9 +120,8 @@ body {
   margin: auto;
   height: 50px;
   font-family: "Phudu";
-
 }
-.personajes-img-container .info{
+.personajes-img-container .info {
   position: absolute;
   top: 0;
   left: 20px;
@@ -139,7 +135,6 @@ body {
   overflow: auto;
   text-align: center;
   padding-top: 8em;
-
 }
 .pelicula-img-container .info p {
   margin: 0;
@@ -150,7 +145,7 @@ body {
   font-weight: bold;
 }
 
-.contenedorBtn{
+.contenedorBtn {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -158,16 +153,17 @@ body {
 }
 
 .pelicula-img-container button:hover {
-  background-color: #83d1ae;}
+  background-color: #83d1ae;
+}
 
-.personajes-img-container .info p{
+.personajes-img-container .info p {
   margin: 0;
   line-height: 1.5;
 }
-.personajes-img-container .info p span{
+.personajes-img-container .info p span {
   font-weight: bold;
 }
-.locaciones-img-container{
+.locaciones-img-container {
   position: relative;
 }
 .locaciones-img-container .info {
@@ -190,7 +186,6 @@ body {
   width: 320px;
   height: 400px;
   margin: 20px;
-
 }
 
 @media (max-width: 575.98px) {
@@ -248,5 +243,3 @@ body {
   height: 400px;
   margin: 20px;
 }
-
-
