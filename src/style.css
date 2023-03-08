@@ -36,8 +36,6 @@ h2 {
  text-shadow: 2px 2px 5px rgb(28, 80, 8);
 
 }
-
-
 body {
   margin: 0px;
   padding: 0px;
@@ -46,21 +44,15 @@ body {
   
 }
 
-
-.peliculas-grid {
+.main-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;;
   align-items: center;
-  /*padding-top: 100px;*/
   font-family: "Rubik";
   margin: 4%;
 }
-.pelicula {
-  position: relative;
-  text-align: center;
-  
-}
+
 
 .pelicula-img-container {
   position: relative;
@@ -88,8 +80,51 @@ body {
   text-align: center;
   padding: 30px;
 }
+.vehiculos-img-container{
+  position: relative;
+}
+.vehiculos-img-container img{
+  display: block;
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+}
+
+.vehiculos-img-container .info{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  right: 20px;
+  color: white;
+  background-color: rgba(14, 18, 17, 0.8);
+  display: none;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  padding: 20%;
+}
+.vehiculos-img-container .info p{
+  margin: 0;
+  line-height: 1.5;
+}
+.vehiculos-img-container .info p span{
+  font-weight: bold;
+}
 .personajes-img-container {
   position: relative;
+}
+.pelicula-img-container button{
+  background: #ff69b4;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 50px;
+  width: 120px;
+  margin: auto;
+  height: 50px;
+  font-family: "Phudu";
+
 }
 .personajes-img-container .info{
   position: absolute;
@@ -115,19 +150,16 @@ body {
 .pelicula-img-container .info p span {
   font-weight: bold;
 }
-.btnpersonajes{
- 
-  background: #ff69b4;
-  color: #fff;
-  padding: 10px 10px;
-  border-radius: 50px;
-  width: 120px;
-  align-items: flex-start;
-  margin: 10px 20px;
-  height: 50px;
-  font-family: "Phudu";
 
+.contenedorBtn{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
 }
+
+.pelicula-img-container button:hover {
+  background-color: #83d1ae;}
 
 .personajes-img-container .info p{
   margin: 0;
@@ -135,6 +167,31 @@ body {
 }
 .personajes-img-container .info p span{
   font-weight: bold;
+}
+.locaciones-img-container{
+  position: relative;
+}
+.locaciones-img-container .info {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  right: 20px;
+  color: white;
+  background-color: rgba(14, 18, 17, 0.8);
+  display: none;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  padding: 20%;
+}
+.locaciones-img-container img {
+  display: block;
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+
 }
 
 @media (max-width: 575.98px) {
@@ -156,7 +213,7 @@ body {
     height: 100px;
     width: calc(80%);
   }
-  .peliculas-grid {
+  .main-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -167,7 +224,7 @@ body {
   }
 }
 @media (max-width: 991.98px) {
-  .peliculas-grid {
+  .main-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

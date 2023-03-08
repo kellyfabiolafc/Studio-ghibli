@@ -1,15 +1,22 @@
-/* eslint-disable no-unused-vars */
+
 /*código que tenga que ver con mostrar los datos en la pantalla. Con esto nos referimos básicamente a la interacción con el DOM. Operaciones 
 como creación de nodos, registro de manejadores de eventos*/
 import data from "./data/ghibli/ghibli.js";
-import { filterOfdata, sortData, sortData2, sortData3, sortData4} from "./data.js";
+import {
+  filterOfdata,
+  filterOfdata2,
+  filterOfdata3,
+  sortData,
+  sortData2,
+  sortData3,
+  sortData4,
+} from "./data.js";
 
 const mostrarAnimaciones = (data) => {
-  const peliculasContainer = document.querySelector(".peliculas-grid");
+  const peliculasContainer = document.querySelector(".main-container");
   peliculasContainer.innerHTML = "";
   for (const pelicula of data) {
     const peliculaElem = document.createElement("div");
-    peliculaElem.className = "pelicula";
     peliculaElem.innerHTML = `
       <h2 class="titulo">${pelicula.title}</h2>
       <div class="pelicula-img-container">
@@ -20,7 +27,11 @@ const mostrarAnimaciones = (data) => {
           <p>Productor: <span class="productor">${pelicula.producer}</span></p>
           <p>Año de lanzamiento: <span class="fecha-lanzamiento">${pelicula.release_date}</span></p>
           <p>Puntuación de Rotten Tomatoes: <span class="puntuacion">${pelicula.rt_score}</span></p>
+          <div class="contenedorBtn">
           <button id='${pelicula.id}' class='btnpersonajes'>Personajes</button>
+          <button id='${pelicula.id}' class='btnlocaciones'>locaciones</button>
+          <button id='${pelicula.id}' class='btnvehiculos'>vehiculos</button>
+          </div>
         </div>
       </div>
     </div>
@@ -28,21 +39,18 @@ const mostrarAnimaciones = (data) => {
     peliculaElem.addEventListener("mouseenter", () => {
       peliculaElem.querySelector(".info").style.display = "block";
     });
-    peliculaElem
-      .querySelector(".pelicula-img-container")
-      .addEventListener("mouseleave", () => {
-        peliculaElem.querySelector(".info").style.display = "none";
-      });
+    peliculaElem.addEventListener("mouseleave", () => {
+      peliculaElem.querySelector(".info").style.display = "none";
+    });
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
       btn.addEventListener("click", function (e) {
-        const peliculasContainer2 = document.querySelector(".peliculas-grid");
-        peliculasContainer2.innerHTML = "";
+        const characterContainer = document.querySelector(".main-container");
+        characterContainer.innerHTML = "";
         const h1 = document.getElementById("Encabezado");
         const personajes = filterOfdata(data, e.target.id); // arreglo de personajes
         h1.textContent = "Personajes de la animación: " + pelicula.title;
         personajes.characters.forEach((personaje) => {
           const personajeElem = document.createElement("div");
-          personajeElem.className = "Stadia";
           personajeElem.innerHTML = `<h2 class="titulo">${personaje.name}</h2>
           <article class="personajes-img-container">
             <img src="${personaje.img}" alt="${personaje.name}">
@@ -61,34 +69,89 @@ const mostrarAnimaciones = (data) => {
           personajeElem.addEventListener("mouseleave", () => {
             personajeElem.querySelector(".info").style.display = "none";
           });
-          peliculasContainer2.appendChild(personajeElem);
+          characterContainer.appendChild(personajeElem);
         });
       });
     });
+
+    peliculaElem.querySelectorAll(".btnlocaciones").forEach((button) => {
+      button.addEventListener("click", function (e) {
+        const containerLocations = document.querySelector(".main-container");
+        containerLocations.innerHTML = "";
+        const locaciones = filterOfdata3(data, e.target.id); // arreglo de locaciones
+        locaciones.forEach((locaciones) => {
+          const locationElem = document.createElement("div");
+          locationElem.innerHTML = `<h2 class="titulo">${locaciones.name}</h2>
+        <article class="locaciones-img-container">
+          <img src="${locaciones.img}" alt="${locaciones.name}">
+          <article class="info">
+            <p>CLimate: <span class="vehicless_class">${locaciones.climate}</span></p>
+            <p>Terrain: <span class="length">${locaciones.terrain}</span></p>
+            <p>Sorface: <span class="pilot">${locaciones.sorface_water}</span></p>
+          </article>
+        </article>
+      `;
+          locationElem.addEventListener("mouseenter", () => {
+            locationElem.querySelector(".info").style.display = "block";
+          });
+          locationElem.addEventListener("mouseleave", () => {
+            locationElem.querySelector(".info").style.display = "none";
+          });
+          containerLocations.appendChild(locationElem);
+        });
+      });
+    });
+    peliculaElem.querySelectorAll(".btnvehiculos").forEach((bton) => {
+      bton.addEventListener("click", function (e) {
+        const animationContainer = document.querySelector(".main-container");
+        animationContainer.innerHTML = "";
+        const vehicles = filterOfdata2(data, e.target.id); // arreglo de vehiculos
+        vehicles.forEach((vehicles) => {
+          const vehiculosElem = document.createElement("div");
+          vehiculosElem.className = "contenedordeVehiculos";
+          vehiculosElem.innerHTML = `<h2 class="titulo">${vehicles.name}</h2>
+        <article class="vehiculos-img-container">
+          <img src="${vehicles.img}" alt="${vehicles.name}">
+          <article class="info">
+            <p>${vehicles.description}</p>
+            <p>Vehicles_class: <span class="vehicless_class">${vehicles.vehicles_class}</span></p>
+            <p>Length: <span class="length">${vehicles.length}</span></p>
+            <p>Pilot: <span class="pilot">${vehicles.pilot.name}</span></p>
+          </article>
+        </article>
+      `;
+          vehiculosElem.addEventListener("mouseenter", () => {
+            vehiculosElem.querySelector(".info").style.display = "block";
+          });
+          vehiculosElem.addEventListener("mouseleave", () => {
+            vehiculosElem.querySelector(".info").style.display = "none";
+          });
+          animationContainer.appendChild(vehiculosElem);
+        });
+      });
+    });
+
+
+  
     peliculasContainer.appendChild(peliculaElem);
   }
 };
-
-
-mostrarAnimaciones(data.films);
-
-const select = document.querySelector('#ordenar');
-
-select.addEventListener('change', function() {
+//Invocamos a las funciones importadas y las añadimos a las que coincidan con las opciones selecionadas.
+const select = document.querySelector("#ordenar");
+select.addEventListener("change", function () {
   const value = select.value;
-
-  if (value === 'recientes') {
+  if (value === "recientes") {
     const dataOrdenada = sortData(data.films); // Ordenar por más recientes
     mostrarAnimaciones(dataOrdenada); // Muestra las películas ordenadas
-  } else if (value === 'alfabetico') {
+  } else if (value === "alfabetico") {
     const dataOrdenada1 = sortData2(data.films); // Ordenar alfabéticamente
     mostrarAnimaciones(dataOrdenada1); // Muestra las películas ordenadas
-  } else if (value === 'menoramayor') {
+  } else if (value === "menoramayor") {
     const dataOrdenada2 = sortData3(data.films); // Ordenar por menos recientes
     mostrarAnimaciones(dataOrdenada2); // Muestra las películas ordenadas
-  } else if (value === 'z_a') {
+  } else if (value === "z_a") {
     const dataOrdenada3 = sortData4(data.films); // Ordenar alfabéticamente de Z a A
     mostrarAnimaciones(dataOrdenada3); // Muestra las películas ordenadas
   }
 });
-
+mostrarAnimaciones(data.films);
