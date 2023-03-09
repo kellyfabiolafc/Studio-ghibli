@@ -13,6 +13,7 @@ header {
   font-size: 200%;
   margin: 2%;
   color: black;
+  text-shadow: none;
 }
 header img {
   width: 350px;
@@ -22,19 +23,19 @@ h2 {
   font-family: "Abel";
   text-align: center;
   margin-top: 2%;
+  text-shadow: 2px 2px 5px rgb(249, 239, 242);
 }
 
 #Encabezado {
   font-family: "Abel";
   text-align: center;
   font-size: 35px;
-  background-image: linear-gradient(rgb(77, 139, 95), rgb(33, 22, 30));
   width: 85%;
   margin-top: 2%;
   margin-left: auto;
   margin-right: auto;
   color: white;
-  text-shadow: 2px 2px 5px rgb(28, 80, 8);
+  text-shadow: 2px 2px 5px rgb(237, 48, 114);
 }
 body {
   margin: 0px;
@@ -144,6 +145,12 @@ nav {
   height: 50px;
   font-family: "Phudu";
 }
+.personajes-img-container img{
+  display: block;
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+}
 .personajes-img-container .info {
   position: absolute;
   top: 0;
@@ -230,11 +237,6 @@ nav {
     width: 200px;
     height: 220px;
   }
-  #pelicula img {
-    width: 250px;
-    height: 100px;
-    width: calc(80%);
-  }
   .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -253,21 +255,26 @@ nav {
     align-items: center;
     padding-top: 100px;
     font-family: "Rubik";
-    margin: 1%;
+    margin: 2%;
   }
 }
-.personajeS {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 100px;
-  font-family: "Rubik";
-  margin: 10%;
+/*He incluido este media query porque para ipad mini solo salia en columna de 1*/
+@media (max-width: 768.98px) { 
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    font-family: "Rubik";
+    margin: auto;
+  }
+#subtitulo-general{
+  font-size: 150%;
+
 }
-.personajes-img-container img {
-  display: block;
-  width: 320px;
-  height: 400px;
-  margin: 20px;
+#Encabezado{
+  font-size: 30px;
+  margin-top: 5%;
+}
 }
