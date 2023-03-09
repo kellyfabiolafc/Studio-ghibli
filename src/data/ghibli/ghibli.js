@@ -192,7 +192,7 @@ export default {
         {
           "id": "4e09b023-f650-4747-9ab9-eacf14540cfb",
           "name": "Air Destroyer Goliath",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/e/e5/Goliath.png",
+          "img": "https://external-preview.redd.it/5bYPZH3XSDJJpgaG6FyN0dbfn4iJcKdzXkVVdiA56Fg.jpg?auto=webp&s=2e33dd54046d15fa80431ec81a303e2229c36f85",
           "description": "A military airship utilized by the government to access Laputa",
           "vehicle_class": "Airship",
           "length": "1,000",
@@ -448,7 +448,7 @@ export default {
         {
           "id": "62346d33-caa0-4c17-8016-0aca56f3066b",
           "name": "Karikiya",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/e/e3/Majo002.jpg",
+          "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/339c8b64-bc26-4ee0-8254-12e9093975dc/deobjwb-a319f2d8-4f7b-459d-b855-89fad6807f10.jpg/v1/fill/w_873,h_915,q_70,strp/studio_ghibli__kiki_s_house_by_athena_tivnan_deobjwb-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM0MSIsInBhdGgiOiJcL2ZcLzMzOWM4YjY0LWJjMjYtNGVlMC04MjU0LTEyZTkwOTM5NzVkY1wvZGVvYmp3Yi1hMzE5ZjJkOC00ZjdiLTQ1OWQtYjg1NS04OWZhZDY4MDdmMTAuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.bM3qvaZjmbUoMYUcLsRNM0xDmEWtanvonS87mQ8lN2k",
           "climate": "Mild",
           "terrain": "City",
           "surface_water": "30",
@@ -775,7 +775,7 @@ export default {
         {
           "id": "d8f893b5-1dd9-41a1-9918-0099c1aa2de8",
           "name": "Red Wing",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8f/Porco%27s_Plane.jpg",
+          "img": "https://i.pinimg.com/564x/17/a0/5b/17a05b5211cd2f15d84c970e087391b6.jpg",
           "description": "An experimental aircraft captured by Porco. Named Savoia S.21",
           "vehicle_class": "Airplane",
           "length": "20",
@@ -787,7 +787,7 @@ export default {
         {
           "id": "7eb1b9cd-8153-4ef6-a0d4-1e9abd8d78da",
           "name": "Dabohaze",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/99/Aiuto_Gang.jpg",
+          "img": "https://i.pinimg.com/736x/a2/49/c4/a249c442948d63691da85386664767a1.jpg",
           "description": "It's the Mamma Aiuto Gang's battle ship, They're an air pirate gang lead by Capo",
           "vehicle_class": "Battle ship",
           "length": "NA",
@@ -977,7 +977,7 @@ export default {
         {
           "id": "42f787d8-1fcb-4d3d-82f2-a74409869368",
           "name": "Seiji's House",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a7/Mimi011.jpg",
+          "img": "https://i.pinimg.com/564x/d2/fa/47/d2fa473b073709f3dec629cc17337ab8.jpg",
           "climate": "Continental",
           "terrain": "City",
           "surface_water": "0",
@@ -1438,7 +1438,7 @@ export default {
         {
           "id": "a8bd9c03-7c80-4a97-b7c0-6a668acaf576",
           "name": "The Cat Kingdom",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Baron022.jpg",
+          "img": "https://i.pinimg.com/736x/8b/8c/4e/8b8c4eea944dc90b3900dda35fa3ad88.jpg",
           "climate": "Continental",
           "terrain": "Plain",
           "surface_water": "30",
@@ -1592,7 +1592,7 @@ export default {
         {
           "id": "2354305f-dccd-4c44-a79e-cc60ba7376e6",
           "name": "Howl's castle",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/e/e6/Howls_Castle.jpg",
+          "img": "https://i.pinimg.com/736x/52/a7/0e/52a70e59b1686cb154292fb368f686e0.jpg",
           "description": "Wizard Howl's home. It's scale changes from scene to scene.",
           "vehicle_class": "Moving castle",
           "length": "unknown",
@@ -1698,7 +1698,7 @@ export default {
         {
           "id": "bcc54f38-8847-45b0-97b1-307c94b2b517",
           "name": "Enland",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/0e/Ged007.jpg",
+          "img": "https://i.pinimg.com/564x/6c/fe/24/6cfe2450d5e37b6adcaffaaa5cd97aec.jpg",
           "climate": "Wet",
           "terrain": "Earthsea",
           "surface_water": "100",
@@ -1848,7 +1848,7 @@ export default {
         {
           "id": "923d70c9-8f15-4972-ad53-0128b261d628",
           "name": "Sosuke's Boat",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/PonyoS%C5%8DsukeBoat.jpg",
+          "img": "https://i.pinimg.com/564x/26/f8/bc/26f8bcb1de014bf40c36c1c26fd4427d.jpg",
           "description": "A toy boat where Sosuke plays",
           "vehicle_class": "Boat",
           "length": "10",
@@ -1954,7 +1954,7 @@ export default {
         {
           "id": "1e7ed524-4b4f-466b-978c-69dda9777396",
           "name": "Sho's house",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/86/Karigurashi002.jpg",
+          "img": "https://i.pinimg.com/564x/68/62/ec/6862ecc9a447f3bd19a98d392579ea1f.jpg",
           "climate": "Warm",
           "terrain": "Forest",
           "surface_water": "10",
@@ -1965,7 +1965,7 @@ export default {
         {
           "id": "f2148ab5-f272-4057-b05a-1321e35227b4",
           "name": "Karigurashi's house",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/cd/Karigurashi019.jpg",
+          "img": "https://i.pinimg.com/736x/20/21/c6/2021c68c7bba15a7ba43607fbb7303c5.jpg",
           "climate": "Warm",
           "terrain": "Under the floorboards",
           "surface_water": "10",
@@ -2177,7 +2177,7 @@ export default {
         {
           "id": "2b380662-626d-42fb-9e3a-14f951201c8b",
           "name": "Nagoya",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/2/20/Kazetachinu009.jpg",
+          "img": "https://i.pinimg.com/564x/6b/62/ee/6b62ee5c7956c2206645aeffe4e1f2fa.jpg",
           "climate": "Damp",
           "terrain": "Hill",
           "surface_water": "20",
@@ -2190,7 +2190,7 @@ export default {
         {
           "id": "411f66ed0-771c-46d3-8f68-a3b65c6dd91c",
           "name": "Mitsubishi 1MF9 ",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Kazetachinu044.jpg",
+          "img": "https://i.pinimg.com/originals/af/c5/d4/afc5d4a9c68a1ec86699efb061f0193e.gif",
           "description": "The Mitsubishi 1MF9 or Mitsubishi Experimental Taka-type Carrier Fighter was a prototype Japanese fighter aircraft of the 1920s. It was a single-engined, single-seat biplane intended to operate from the Imperial Japanese Navy's aircraft carriers, but only two were built, with the type being rejected by the Navy.",
           "vehicle_class": "War plane",
           "length": "8",
@@ -2296,7 +2296,7 @@ export default {
         {
           "id": "682df5c3-b09e-46af-94d1-ae0d17f9b4b6",
           "name": "Bamboo Forest",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/e/ec/Ghibli-kaguya-bamboo-forest.jpg",
+          "img": "https://i.pinimg.com/564x/55/cb/c7/55cbc79e4385541c1c1163b63dd8c2a9.jpg",
           "climate": "Tropical",
           "terrain": "Forest",
           "surface_water": "10",
@@ -2422,7 +2422,7 @@ export default {
         {
           "id": "56e423c4-d9a1-44c4-8bdb-1cab45fbf63e",
           "name": "The Marsh House",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8c/Marsh_house.jpg",
+          "img": "https://i.pinimg.com/564x/f0/ad/9a/f0ad9ac54c3e9124efbc3332f1a6ee1b.jpg",
           "climate": "Mild",
           "terrain": "Marsh",
           "surface_water": "60",
