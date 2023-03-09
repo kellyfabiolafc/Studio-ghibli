@@ -17,6 +17,7 @@ const mostrarAnimaciones = (data) => {
   peliculasContainer.innerHTML = "";
   for (const pelicula of data) {
     const peliculaElem = document.createElement("div");
+    peliculaElem.className="contenedorHijo";
     peliculaElem.innerHTML = `
       <h2 class="titulo">${pelicula.title}</h2>
       <div class="pelicula-img-container">
@@ -51,6 +52,7 @@ const mostrarAnimaciones = (data) => {
         h1.textContent = "Personajes de la animación: " + pelicula.title;
         personajes.characters.forEach((personaje) => {
           const personajeElem = document.createElement("div");
+          personajeElem.className="contenedorHijo";
           personajeElem.innerHTML = `<h2 class="titulo">${personaje.name}</h2>
           <article class="personajes-img-container">
             <img src="${personaje.img}" alt="${personaje.name}">
@@ -81,13 +83,15 @@ const mostrarAnimaciones = (data) => {
         const locaciones = filterOfdata3(data, e.target.id); // arreglo de locaciones
         locaciones.forEach((locaciones) => {
           const locationElem = document.createElement("div");
+          locationElem.className="contenedorHijo";
           locationElem.innerHTML = `<h2 class="titulo">${locaciones.name}</h2>
         <article class="locaciones-img-container">
           <img src="${locaciones.img}" alt="${locaciones.name}">
           <article class="info">
-            <p>CLimate: <span class="vehicless_class">${locaciones.climate}</span></p>
+            <p>Climate: <span class="vehicless_class">${locaciones.climate}</span></p>
             <p>Terrain: <span class="length">${locaciones.terrain}</span></p>
             <p>Sorface: <span class="pilot">${locaciones.sorface_water}</span></p>
+            <p>Residents: <span class="pilot">${locaciones.residents}</span></p>
           </article>
         </article>
       `;
@@ -109,6 +113,7 @@ const mostrarAnimaciones = (data) => {
         vehicles.forEach((vehicles) => {
           const vehiculosElem = document.createElement("div");
           vehiculosElem.className = "contenedordeVehiculos";
+          vehiculosElem.className="contenedorHijo";
           vehiculosElem.innerHTML = `<h2 class="titulo">${vehicles.name}</h2>
         <article class="vehiculos-img-container">
           <img src="${vehicles.img}" alt="${vehicles.name}">

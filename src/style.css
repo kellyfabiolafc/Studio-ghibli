@@ -12,6 +12,7 @@ header {
 #subtitulo-general {
   font-size: 200%;
   margin: 2%;
+  color: black;
 }
 header img {
   width: 350px;
@@ -40,6 +41,7 @@ body {
   padding: 0px;
   background-color: #c7dfdf;
   font-family: "Abel";
+
 }
 
 .main-container {
@@ -53,14 +55,23 @@ body {
 
 nav { 
   text-align: center;
-  background: #ff69b4;
+  background-color: #C75891;
   color: #fff;
   padding: 10px 10px;
   border-radius: 10px;
-  width: 250px;
+  width: 350px;
   font-family: "Phudu";
   margin:auto ;
- 
+}
+.selectordeOrden {
+  height: 25px ;
+  width: 150px;
+  font-family: "Abel";
+  font-size: 15px;
+  background-color: #83d1ae;
+}
+.selectordeOrden :checked{
+  background-color:rgb(199, 223, 223);
 }
 .pelicula-img-container {
   position: relative;
@@ -199,7 +210,12 @@ nav {
   height: 400px;
   margin: 20px;
 }
-
+.contenedorHijo{
+  /*background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);*/
+  background-image: linear-gradient(rgb(77, 139, 95), #9B9775);
+  margin :1.5%;
+  
+}
 @media (max-width: 575.98px) {
   header {
     font-size: 200%;
