@@ -268,33 +268,7 @@ button {
   background-image: linear-gradient(rgb(77, 139, 95), #9b9775);
   margin: 1.5%;
 }
-/*
-@media (max-width: 575.98px) {
-  header {
-    font-size: 200%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    font-family: "Phudu";
-  }
-  header img {
-    width: 200px;
-    height: 220px;
-  }
-  .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    font-family: "Rubik";
-    margin: 10%;
-  }
-}/*
 
-/*
 /*He incluido este media query para telefonos*/
 @media (max-width: 768.98px) {
   .main-container {
