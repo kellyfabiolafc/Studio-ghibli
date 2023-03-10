@@ -1,4 +1,3 @@
-
 /*código que tenga que ver con mostrar los datos en la pantalla. Con esto nos referimos básicamente a la interacción con el DOM. Operaciones 
 como creación de nodos, registro de manejadores de eventos*/
 import data from "./data/ghibli/ghibli.js";
@@ -15,9 +14,11 @@ import {
 const mostrarAnimaciones = (data) => {
   const peliculasContainer = document.querySelector(".main-container");
   peliculasContainer.innerHTML = "";
+  const h1 = document.getElementById("Encabezado");
+  h1.textContent = "";
   for (const pelicula of data) {
     const peliculaElem = document.createElement("div");
-    peliculaElem.className="contenedorHijo";
+    peliculaElem.className = "contenedorHijo";
     peliculaElem.innerHTML = `
       <h2 class="titulo">${pelicula.title}</h2>
       <div class="pelicula-img-container">
@@ -46,13 +47,14 @@ const mostrarAnimaciones = (data) => {
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
       btn.addEventListener("click", function (e) {
         const characterContainer = document.querySelector(".main-container");
+
         characterContainer.innerHTML = "";
         const h1 = document.getElementById("Encabezado");
         const personajes = filterOfdata(data, e.target.id); // arreglo de personajes
         h1.textContent = "Personajes de la animación: " + pelicula.title;
         personajes.characters.forEach((personaje) => {
           const personajeElem = document.createElement("div");
-          personajeElem.className="contenedorHijo";
+          personajeElem.className = "contenedorHijo";
           personajeElem.innerHTML = `<h2 class="titulo">${personaje.name}</h2>
           <article class="personajes-img-container">
             <img src="${personaje.img}" alt="${personaje.name}">
@@ -83,7 +85,7 @@ const mostrarAnimaciones = (data) => {
         const locaciones = filterOfdata3(data, e.target.id); // arreglo de locaciones
         locaciones.forEach((locaciones) => {
           const locationElem = document.createElement("div");
-          locationElem.className="contenedorHijo";
+          locationElem.className = "contenedorHijo";
           locationElem.innerHTML = `<h2 class="titulo">${locaciones.name}</h2>
         <article class="locaciones-img-container">
           <img src="${locaciones.img}" alt="${locaciones.name}">
@@ -113,7 +115,7 @@ const mostrarAnimaciones = (data) => {
         vehicles.forEach((vehicles) => {
           const vehiculosElem = document.createElement("div");
           vehiculosElem.className = "contenedordeVehiculos";
-          vehiculosElem.className="contenedorHijo";
+          vehiculosElem.className = "contenedorHijo";
           vehiculosElem.innerHTML = `<h2 class="titulo">${vehicles.name}</h2>
         <article class="vehiculos-img-container">
           <img src="${vehicles.img}" alt="${vehicles.name}">
@@ -138,6 +140,8 @@ const mostrarAnimaciones = (data) => {
     peliculasContainer.appendChild(peliculaElem);
   }
 };
+mostrarAnimaciones(data.films);
+
 //Invocamos a las funciones importadas y las añadimos a las que coincidan con las opciones selecionadas.
 const select = document.querySelector("#ordenar");
 select.addEventListener("change", function () {
@@ -156,4 +160,10 @@ select.addEventListener("change", function () {
     mostrarAnimaciones(dataOrdenada3); // Muestra las películas ordenadas
   }
 });
-mostrarAnimaciones(data.films);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const volver = document.getElementById("btnvolver");
+  volver.addEventListener("click", function () {
+    mostrarAnimaciones(data.films);
+  });
+});
