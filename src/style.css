@@ -377,14 +377,14 @@ Esto significa que se aplica a dispositivos con una pantalla más pequeña que l
       0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   }
   #Encabezado {
-    font-size: 25px;
+    font-size: 150%;
     margin-top: 5%;
     color: black;
     text-shadow: 2px 2px 5px rgb(124 180 43);
     font-family: "Abel";
     width: fit-content;
-    margin: 10px;
-    margin-right: 10px;
+  /*  margin: 10px;
+    margin-right: 10px;*/
     text-align: center;
   }
  
@@ -393,6 +393,7 @@ Esto significa que se aplica a dispositivos con una pantalla más pequeña que l
   margin: 10px;
   margin-right: 10px;
   width: fit-content;
+  font-size: 140%;
 
 }
 }
