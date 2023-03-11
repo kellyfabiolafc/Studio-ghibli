@@ -1,53 +1,59 @@
+
+
 <!--Acá va la página que se mostrará al usuario. También nos sirve para indicar qué scripts
   se usarán y unir todo lo que hemos hecho.-->
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <title>Data Lovers</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Nunito Sans|Inria Sans |Abel|Rubik|Phudu|kosugi-maru|Styles|kosugi-maru|Lobster|Quicksand"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <img src="imagenes\totoro.png" />
-      <h1>Studio Ghibli</h1>
-    </header>
-    <h2 id="subtitulo-general">
-      Descubre todo sobre tus personajes y animaciones preferidos ¡Explora y
-      aprende con nuestra página web de Studio Ghibli!
-    </h2>
-    <nav>
-      <select class="selectordeOrden" id="ordenar">
-        <option value="" disabled selected>Ordenar por:</option>
-        <option value="menoramayor">Menos recientes</option>
-        <option value="alfabetico">A-Z</option>
-        <option value="recientes">Más recientes</option>
-        <option value="z_a">Z-A</option>
-      </select>
-      <button id='btnvolver'>Volver</button>
-    </nav>
-    <article id="Encabezado"></article>
-    <main class="main-container">
-      <!-- Para cada película -->
-      <!--<div class="pelicula">
-       <h2 class="titulo">Título de la película</h2>
-         <div class="pelicula-img-container">
-        <img src="ruta/a/la/imagen.jpg" alt="Título de la película">
-        <div class="info">
-          <p>Descripción de la película</p>
-          <p>Director: <span class="director">Nombre del director</span></p>
-          <p>Productor: <span class="productor">Nombre del productor</span></p>
-          <p>Año de lanzamiento: <span class="fecha-lanzamiento">YYYY</span></p>
-          <p>Puntuación de Rotten Tomatoes: <span class="puntuacion">XX</span></p>
-        </div>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width initial-scale=1" />
+      <title>Data Lovers</title>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito Sans|Inria Sans |Abel|Rubik|Phudu|kosugi-maru|Styles|kosugi-maru|Lobster|Quicksand"
+      />
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <header>
+        <img src="imagenes\totoro.png" />
+        <h1>Studio Ghibli</h1>
+      </header>
+      <h2 id="subtitulo-general">
+        Descubre todo sobre tus personajes y animaciones preferidos ¡Explora y
+        aprende con nuestra página web de Studio Ghibli!
+      </h2>
+      <nav>
+        <select class="selectordeOrden" id="ordenar">
+          <option value="" disabled selected>Ordenar por:</option>
+          <option value="menoramayor">Menos recientes</option>
+          <option value="alfabetico">A-Z</option>
+          <option value="recientes">Más recientes</option>
+          <option value="z_a">Z-A</option>
+        </select>
+        <button id="btnvolver">Volver</button>
+        <button id="top-10">Top 10</button>
+      </nav>
+      <article id="Encabezado">
+      </article>
+      <div id="promedio">
       </div>
-     -->
-    </main>
-    <script src="main.js" type="module"></script>
-  </body>
-</html>
+      <main class="main-container">
+        <!-- Para cada película -->
+        <!--<div class="pelicula">
+         <h2 class="titulo">Título de la película</h2>
+           <div class="pelicula-img-container">
+          <img src="ruta/a/la/imagen.jpg" alt="Título de la película">
+          <div class="info">
+            <p>Descripción de la película</p>
+            <p>Director: <span class="director">Nombre del director</span></p>
+            <p>Productor: <span class="productor">Nombre del productor</span></p>
+            <p>Año de lanzamiento: <span class="fecha-lanzamiento">YYYY</span></p>
+            <p>Puntuación de Rotten Tomatoes: <span class="puntuacion">XX</span></p>
+          </div>
+        </div>
+       -->
+      </main>
+      <script src="main.js" type="module"></script>
+    </body>
+  </html>

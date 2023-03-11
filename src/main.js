@@ -1,3 +1,4 @@
+
 /*código que tenga que ver con mostrar los datos en la pantalla. Con esto nos referimos básicamente a la interacción con el DOM. Operaciones 
 como creación de nodos, registro de manejadores de eventos*/
 import data from "./data/ghibli/ghibli.js";
@@ -9,6 +10,8 @@ import {
   sortData2,
   sortData3,
   sortData4,
+  calculoData,
+  filterMoviesByScore,
 } from "./data.js";
 
 const mostrarAnimaciones = (data) => {
@@ -44,12 +47,15 @@ const mostrarAnimaciones = (data) => {
     peliculaElem.addEventListener("mouseleave", () => {
       peliculaElem.querySelector(".info").style.display = "none";
     });
+    peliculasContainer.appendChild(peliculaElem);
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
       btn.addEventListener("click", function (e) {
         const characterContainer = document.querySelector(".main-container");
-
         characterContainer.innerHTML = "";
         const h1 = document.getElementById("Encabezado");
+        h1.addEventListener("mouseenter", function () {
+          document.getElementById("promedio").style.display = "none";
+        });
         const personajes = filterOfdata(data, e.target.id); // arreglo de personajes
         h1.textContent = "Personajes de la animación: " + pelicula.title;
         personajes.characters.forEach((personaje) => {
@@ -75,6 +81,51 @@ const mostrarAnimaciones = (data) => {
           });
           characterContainer.appendChild(personajeElem);
         });
+      });
+    });
+
+    const buttonTop10 = document.getElementById("top-10");
+    buttonTop10.addEventListener("click", function () {
+      const h2 = document.getElementById("Encabezado");
+      h2.innerHTML =
+        "¿Sabías que Studio Ghibli es considerado uno de los <br>mejores estudios de animación en todo el mundo?";
+      h2.addEventListener("mouseenter", function () {
+        const h1 = document.getElementById("promedio");
+        h1.innerHTML =
+          "El promedio general de puntuación de las animaciones de Studio Ghibli es del " +
+          promedioGeneral +
+          "  ¡Eso es increíble! Significa que la gran mayoría de las películas de Studio Ghibli han sido muy bien recibidas tanto por la crítica como por el público en general. ¡Definitivamente vale la pena verlas!";
+        document.getElementById("promedio").style.display = "block";
+      });
+      h2.addEventListener("mouseleave", () => {
+        document.getElementById("promedio").style.display = "none";
+      });
+      const characterContaine = document.querySelector(".main-container");
+      characterContaine.innerHTML = "";
+      const promedioGeneral = calculoData(data);
+      const top = filterMoviesByScore(data, 88); // arreglo de top 10
+      top.forEach((top10) => {
+        const calculoElem = document.createElement("div");
+        calculoElem.className = "contenedorHijo";
+        calculoElem.innerHTML = `
+        <h2 class="titulo">${top10.title}</h2>
+        <div class="pelicula-img-container">
+          <img src="${top10.poster}" alt="${pelicula.title}">
+          <div class="info">
+            <p>${top10.description}</p>
+            <p>Puntuación de Rotten Tomatoes: <span class="puntuacion">${top10.rt_score}</span></p>
+          </div>
+        </div>
+      </div>
+    `;
+        calculoElem.addEventListener("mouseenter", () => {
+          calculoElem.querySelector(".info").style.display = "block";
+        });
+        calculoElem.addEventListener("mouseleave", () => {
+          calculoElem.querySelector(".info").style.display = "none";
+        });
+
+        characterContaine.appendChild(calculoElem);
       });
     });
 
@@ -107,8 +158,8 @@ const mostrarAnimaciones = (data) => {
         });
       });
     });
-    peliculaElem.querySelectorAll(".btnvehiculos").forEach((bton) => {
-      bton.addEventListener("click", function (e) {
+    peliculaElem.querySelectorAll(".btnvehiculos").forEach((buttonTop10) => {
+      buttonTop10.addEventListener("click", function (e) {
         const animationContainer = document.querySelector(".main-container");
         animationContainer.innerHTML = "";
         const vehicles = filterOfdata2(data, e.target.id); // arreglo de vehiculos
@@ -137,7 +188,6 @@ const mostrarAnimaciones = (data) => {
         });
       });
     });
-    peliculasContainer.appendChild(peliculaElem);
   }
 };
 mostrarAnimaciones(data.films);
@@ -164,6 +214,12 @@ select.addEventListener("change", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const volver = document.getElementById("btnvolver");
   volver.addEventListener("click", function () {
+    //document.getElementById("Encabezado").style.display = "none";
     mostrarAnimaciones(data.films);
   });
 });
+/*
+const promedio = calculoData(data.films);
+console.log(promedio); // Imprime 88.88888
+*/
+
