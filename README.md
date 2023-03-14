@@ -41,7 +41,7 @@ Primeras versiones de las historias de usuario que diseñamos en cada sprint
 ## 6. Resumen del proyecto
 <h3>Objetivos:</h3>
 Este es un proyecto que tiene como objetivo mostrar información sobre películas del Studio Ghibli. A continuación, se detallan las funciones disponibles en el proyecto.<br>
-<strong>Funciones:</strong><br>
+<h3>Funciones</h3><br>
 <strong>filterOfdata(data, id)</strong>
 Esta función filtra la información de las películas y devuelve un objeto con el título y los personajes de la película que corresponde con el id proporcionado.
 
@@ -72,9 +72,21 @@ Esta función filtra las películas por una puntuación mínima (topScore) y dev
 
 ## 7. Contribuidores
 <strong>Kelly  Flores<em>(floresdelacruzkellyfabiola@gmail.com)</em></strong><br>
-<strong>Alexa Suarez</em>(alexas1903@gmail.com)</em></strong>
+<strong>Alexa Suarez<em>(alexas1903@gmail.com)</em></strong>
 
-## 8. Objetivos de aprendizaje
+### 8 Pruebas unitarias
+<h3>Uso:</h3><br>
+La primera prueba es verificar si la filterOfdatafunción devuelve correctamente el título y los personajes de una película con una identificación específica.<br>
+La segunda prueba es verificar si la filterOfdata2función devuelve correctamente los vehículos de una película con una identificación específica.<br>
+La tercera prueba es verificar si la filterOfdata3función devuelve correctamente las ubicaciones de una película con una identificación específica.<br>
+La cuarta prueba es verificar si la sortDatafunción clasifica correctamente una serie de objetos de películas en orden ascendente y descendente por fecha de lanzamiento.<br>
+La quinta prueba es verificar si la sortData2función clasifica correctamente una matriz de objetos de película en orden ascendente por título.<br>
+La sexta prueba es verificar si la sortData3función clasifica correctamente una serie de objetos de películas en orden ascendente y descendente por fecha de lanzamiento.<br>
+La séptima prueba es verificar si la sortData4función clasifica correctamente una matriz de objetos de película en orden descendente por título.<br>
+La octava prueba es comprobar si la calculoDatafunción calcula correctamente la puntuación media de todas las películas.
+
+
+## 9. Objetivos de aprendizaje
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
@@ -270,17 +282,6 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 </p></details>
 
 
-
-### Pruebas unitarias
-
-El _boilerplate_ de este proyecto no incluye Pruebas Unitarias (_tests_), así es
-que  tendrás que escribirlas tú para las funciones encargadas de  _procesar_,
-_filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-
-Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
-en la sección de [Consideraciones técnicas](#srcdatajs).
 
 ### Checklist
 
