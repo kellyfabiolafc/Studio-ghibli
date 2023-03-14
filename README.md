@@ -14,17 +14,17 @@ La pagina es dinamica y te permite:
 ## 1. Historias de Usuario
 Primeras versiones de las historias de usuario que diseñamos en cada sprint 
 
-<p align="center" width="100%"> <img width="33%" src="./src/imagenes/HistoriasU.png">
+<p align="center" width="100%"> <img width="100%" src="./src/imagenes/HistoriasU.png">
 </p>
 
 
 ## 2. Criterios de aceptacion y determinado
 
-<p align="center" width="100%"> <img width="33%" src="./src/imagenes/CriteriosHU.png">
+<p align="center" width="100%"> <img width="100%" src="./src/imagenes/CriteriosHU.png">
 </p>
 
 ## 2. Prototipos de baja fidelidad
-<p align="center" width="100%"> <img width="33%" src="./src/imagenes/CollagePbaja.jpg">
+<p align="center" width="100%"> <img width="100%" src="./src/imagenes/CollagePbaja.jpg">
 </p>
 
 ## 3. Prototipo de alta 
