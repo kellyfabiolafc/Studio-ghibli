@@ -91,7 +91,7 @@ const mostrarAnimaciones = (data) => {
       h2.addEventListener("mouseenter", function () {
         const h1 = document.getElementById("AnuncioPromedio");
         h1.innerHTML =
-          "El AnuncioPromedio general de puntuación de las animaciones de Studio Ghibli es del " +
+          "El promedio general de puntuación de las animaciones de Studio Ghibli es del " +
           PromedioGeneral +
           "  ¡Eso es increíble! Significa que la gran mayoría de las películas de Studio Ghibli han sido muy bien recibidas tanto por la crítica como por el público en general. ¡Definitivamente vale la pena verlas!";
         document.getElementById("AnuncioPromedio").style.display = "block";
