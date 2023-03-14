@@ -1,46 +1,40 @@
-
-
-<!--Acá va la página que se mostrará al usuario. También nos sirve para indicar qué scripts
-  se usarán y unir todo lo que hemos hecho.-->
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width initial-scale=1" />
-      <title>Data Lovers</title>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Nunito Sans|Inria Sans |Abel|Rubik|Phudu|kosugi-maru|Styles|kosugi-maru|Lobster|Quicksand"
-      />
-      <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-      <header>
-        <img src="imagenes\totoro.png" />
-        <h1>Studio Ghibli</h1>
-      </header>
-      <h2 id="subtitulo-general">
-        Descubre todo sobre tus personajes y animaciones preferidos ¡Explora y
-        aprende con nuestra página web de Studio Ghibli!
-      </h2>
-      <nav>
-        <select class="selectordeOrden" id="ordenar">
-          <option value="" disabled selected>Ordenar por:</option>
-          <option value="menoramayor">Menos recientes</option>
-          <option value="alfabetico">A-Z</option>
-          <option value="recientes">Más recientes</option>
-          <option value="z_a">Z-A</option>
-        </select>
-        <button id="btnvolver">Volver</button>
-        <button id="top-10">Top 10</button>
-      </nav>
-      <article id="Encabezado">
-      </article>
-      <div id="promedio">
-      </div>
-      <main class="main-container">
-        <!-- Para cada película -->
-        <!--<div class="pelicula">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <title>Data Lovers</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito Sans|Inria Sans |Abel|Rubik|Phudu|kosugi-maru|Styles|kosugi-maru|Lobster|Quicksand"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="imagenes\totoro.png" />
+      <h1>Studio Ghibli</h1>
+    </header>
+    <h2 id="subtitulo-general">
+      Descubre todo sobre tus personajes y animaciones preferidos ¡Explora y
+      aprende con nuestra página web de Studio Ghibli!
+    </h2>
+    <nav>
+      <select class="selectordeOrden" id="ordenar">
+        <option value="" disabled selected>Ordenar por:</option>
+        <option value="menoramayor">Menos recientes</option>
+        <option value="alfabetico">A-Z</option>
+        <option value="recientes">Más recientes</option>
+        <option value="z_a">Z-A</option>
+      </select>
+      <button id="btnvolver">Volver</button>
+      <button id="top-10">Top 10</button>
+    </nav>
+    <section id="Anuncio"></section>
+    <section id="AnuncioPromedio"></section>
+    <main class="main-container">
+      <!-- Para cada película -->
+      <!--<div class="pelicula">
          <h2 class="titulo">Título de la película</h2>
            <div class="pelicula-img-container">
           <img src="ruta/a/la/imagen.jpg" alt="Título de la película">
@@ -53,7 +47,15 @@
           </div>
         </div>
        -->
-      </main>
-      <script src="main.js" type="module"></script>
-    </body>
-  </html>
+    </main>
+    <footer style="background-color: rgb(0, 121, 107); color: white; padding: 20px;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <div style="flex-basis: 100%; text-align: center;">
+          <p style="font-size: 18px; margin: 0;">Creado por Kelly y Alexa</p>
+          <p style="font-size: 14px; margin: 0;">&copy; 2023. Todos los derechos reservados. Studio Ghibli</p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

@@ -47,7 +47,7 @@ h2 {
   background-color: #fa7bbb; /* Color de fondo del botón del scrollbar */
 }
 
-#Encabezado {
+#Anuncio {
   margin: auto;
   margin-top: 5%;
   color: white;
@@ -59,7 +59,7 @@ h2 {
   font-size: 190%;
   color: black;
 }
-#promedio {
+#AnuncioPromedio {
   position: relative;
   display: none;
   /* text-shadow: 2px 2px 5px rgb(237 48 114); */
@@ -296,7 +296,7 @@ nav button {
   #subtitulo-general {
     font-size: 150%;
   }
-  #Encabezado {
+  #Anuncio {
     font-size: 30px;
     margin-top: 5%;
   }
@@ -376,24 +376,22 @@ Esto significa que se aplica a dispositivos con una pantalla más pequeña que l
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
       0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   }
-  #Encabezado {
+  #Anuncio {
     font-size: 150%;
     margin-top: 5%;
     color: black;
     text-shadow: 2px 2px 5px rgb(124 180 43);
     font-family: "Abel";
     width: fit-content;
-  /*  margin: 10px;
+    /*  margin: 10px;
     margin-right: 10px;*/
     text-align: center;
   }
- 
 
-#promedio {
-  margin: 10px;
-  margin-right: 10px;
-  width: fit-content;
-  font-size: 140%;
-
-}
+  #AnuncioPromedio {
+    margin: 10px;
+    margin-right: 10px;
+    width: fit-content;
+    font-size: 140%;
+  }
 }
