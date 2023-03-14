@@ -29,67 +29,52 @@ Primeras versiones de las historias de usuario que diseñamos en cada sprint
 
 ## 3. Prototipo de alta 
 <p align="center" width="100%">
-    <img width="33%" src="./src/imagenes/inicial.png"> 
+    <img width="100%" src="./src/imagenes/inicial.png"> 
+</p>
+
+## 4. Responsive
+<p align="center" width="100%">
+    <img width="100%" src="./src/imagenes/responsive.jpg"> 
 </p>
 
 ## 3. Resumen del proyecto
+<h2>Objetivos:</h2>
+Este es un proyecto que tiene como objetivo mostrar información sobre películas del Studio Ghibli. A continuación, se detallan las funciones disponibles en el proyecto.
+<strong>Funciones:</strong>
+filterOfdata(data, id)
+Esta función filtra la información de las películas y devuelve un objeto con el título y los personajes de la película que corresponde con el id proporcionado.
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+filterOfdata2(data, id)
+Esta función filtra la información de las películas y devuelve un array con los vehículos de la película que corresponde con el id proporcionado.
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado
-nos referimos a distintos cálculos que puedes hacer con la data para mostrar
-información aún más relevante para los usuarios (promedio, el valor máximo
-o mínimo, etc).
+filterOfdata3(data, id)
+Esta función filtra la información de las películas y devuelve un array con las locaciones de la película que corresponde con el id proporcionado.
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
+sortData(data)
+Esta función ordena la información de las películas por fecha de lanzamiento, de más reciente a más antigua.
 
-Una vez que definas tu área de interés, buscar entender quién es tu usuario
-y qué necesita saber o ver exactamente; luego podrás construir la interfaz que
-le ayude a interactuar y entender mejor esos datos.
+sortData2(data)
+Esta función ordena la información de las películas alfabéticamente por título, de la A a la Z.
 
-Estos son datos que te proponemos:
+sortData3(data)
+Esta función ordena la información de las películas por fecha de lanzamiento, de más antigua a más reciente.
 
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 251 Pokémon de la región de Kanto
-  y Johto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
+sortData4(data)
+Esta función ordena la información de las películas alfabéticamente por título, de la Z a la A.
 
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
+calculoData(data)
+Esta función calcula el promedio de las calificaciones (rt_score) de todas las películas.
 
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
-  Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty.
-  - [Investigación con seguidores de Rick and Morty](src/data/rickandmorty/README.md)
+filterMoviesByScore(data, topScore)
+Esta función filtra las películas por una puntuación mínima (topScore) y devuelve un array con las 10 películas con las puntuaciones más altas, ordenadas de mayor a menor.
+<h2>Definicion:</h2>
 
-* [Juegos Olímpicos de Río de Janeiro](src/data/athletes/athletes.json).
-  Este set nos proporciona la lista de los atletas que ganaron medallas en las
-  olímpiadas de Río de Janeiro.
-  - [Investigación con interesados en juegos olímpicos de Río de Janeiro](src/data/athletes/README.md)
+ El código muestra información sobre las animaciones de Studio Ghibli y sus personajes, como el título, el director, el productor, la fecha de lanzamiento, la puntuación de Rotten Tomatoes e información sobre los personajes, como sus nombres, edad, género y especie.
 
-* [Studio Ghibli](src/data/ghibli/ghibli.json).
-  En este set encontrarás una lista de las animaciones y sus personajes del
-  [Studio Ghibli](https://ghiblicollection.com/).
-  - [Investigación con seguidores de las animaciones del Studio Ghibli](src/data/ghibli/README.md)
+El código también tiene un botón para mostrar las 10 mejores animaciones de Studio Ghibli según su puntuación en Rotten Tomatoes, un botón para mostrar los personajes de cada animación y botones para mostrar ubicaciones y vehículos relacionados con cada animación.
 
-* [Harry Potter](src/data/harrypotter/harry.json).
-  En este set encontrarás una lista de los personajes,libros pociones
-  y hechizos de toda la saga de
-  [Harry Potter](https://harrypotter.fandom.com).
-  - [Investigación con seguidoras de Harry Potter](src/data/harrypotter/README.md)
+El código también calcula y muestra la puntuación media de Rotten Tomatoes de todas las animaciones de Studio Ghibli.
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
 
 ## 4. Objetivos de aprendizaje
 
