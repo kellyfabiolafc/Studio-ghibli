@@ -84,8 +84,8 @@ La cuarta prueba es verificar si la sortDatafunción clasifica correctamente una
 La quinta prueba es verificar si la sortData2función clasifica correctamente una matriz de objetos de película en orden ascendente por título.<br>
 La sexta prueba es verificar si la sortData3función clasifica correctamente una serie de objetos de películas en orden ascendente y descendente por fecha de lanzamiento.<br>
 La séptima prueba es verificar si la sortData4función clasifica correctamente una matriz de objetos de película en orden descendente por título.<br>
-La octava prueba es comprobar si la calculoDatafunción calcula correctamente la puntuación media de todas las películas.
-
+La octava prueba es comprobar si la calculoDatafunción calcula correctamente la puntuación media de todas las películas.<br>
+La novena prueba está verificando que la función filterMoviesByScore filtre correctamente las películas que superan el promedio general y devuelva un nuevo arreglo con estas películas.
 
 ## 9. Objetivos de aprendizaje
 
