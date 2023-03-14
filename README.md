@@ -10,19 +10,15 @@ La pagina es dinamica y te permite:
 
 ***
 
-## 1. Resumen del proyecto 
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
-
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
-
-## 2. Resumen del proyecto
+## 1. Historias de Usuario
+Primeras versiones de las historias de usuario que diseñamos en cada sprint 
+(src\imagenes\HistoriasU.png)
+## 2. Prototipos de baja fidelidad
+(src\imagenes\CollagePbaja.jpg)
+## 3. Prototipo de alta 
+(src\imagenes\inicial.png)
+## 3. Resumen del proyecto
 
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
@@ -81,7 +77,7 @@ El objetivo principal de este proyecto es que aprendas a diseñar y construir un
 interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
 usuario necesita.
 
-## 3. Objetivos de aprendizaje
+## 4. Objetivos de aprendizaje
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
