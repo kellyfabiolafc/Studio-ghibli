@@ -1,12 +1,12 @@
 # Studio Ghibli
 
 ## Descripción
-La pagina de Studio ghibli se ha creado con la finalidad de proporcionar información detallada y actualizada sobre sus  animaciones .Esto será beneficioso tanto para los fanáticos de la animación como para los investigadores y críticos de cine interesados en conocer más sobre la obra de esta casa productora.
+La pagina de Studio ghibli se ha creado con la finalidad de proporcionar información detallada y actualizada sobre sus  animaciones .Esto será beneficioso tanto para los fanáticos de la animación como para los investigadores y críticos de cine.interesados en conocer más sobre la obra de esta casa productora.
 La pagina es dinamica y te permite:
-Visualizar las animaciones de studio ghibli y mostrar información respecto a cada una de ellas 
-Ordenar de manera alfabetica (A-Z) y (Z-A) ,tambien ordenar por fecha de lanzamiento(más recientes) y (menos reciente).
-Filtrar personajes , vehiculos y ubicaciones  por animacion seleccionada. 
-Visualizar,filtrar y ordenar  top 10 de las animaciones y tambien observar calculo del promedio general.
+1) Visualizar las animaciones de studio ghibli y mostrar información respecto a cada una de ellas.
+2) Ordenar de manera alfabetica (A-Z) y (Z-A) ,tambien ordenar por fecha de lanzamiento(más recientes) y (menos reciente).
+3) Filtrar personajes , vehiculos y ubicaciones  por animacion seleccionada. 
+4) Visualizar,filtrar y ordenar  top 10 de las animaciones y tambien observar calculo del promedio general.
 
 ***
 
