@@ -1,16 +1,20 @@
-# Studio Ghibli
+# Data Lovers
 
-## Descripción
-La pagina de Studio ghibli se ha creado con la finalidad de proporcionar información detallada y actualizada sobre sus  animaciones .Esto será beneficioso tanto para los fanáticos de la animación como para los investigadores y críticos de cine interesados en conocer más sobre la obra de esta casa productora.
-La pagina es dinamica y te permite:
-Visualizar las animaciones de studio ghibli y mostrar información respecto a cada una de ellas 
-Ordenar de manera alfabetica (A-Z) y (Z-A) ,tambien ordenar por fecha de lanzamiento(más recientes) y (menos reciente).
-Filtrar personajes , vehiculos y ubicaciones  por animacion seleccionada. 
-Visualizar,filtrar y ordenar  top 10 de las animaciones y tambien observar calculo del promedio general.
+## Índice
+
+* [1. Preámbulo](#1-preámbulo)
+* [2. Resumen del proyecto](#2-resumen-del-proyecto)
+* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+* [4. Consideraciones generales](#4-consideraciones-generales)
+* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
+* [6. Hacker edition](#6-hacker-edition)
+* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
+* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [9. Checklist](#9-checklist)
 
 ***
 
-## 1. Resumen del proyecto 
+## 1. Preámbulo
 
 Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
