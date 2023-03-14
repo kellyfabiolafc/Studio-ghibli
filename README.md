@@ -69,12 +69,15 @@ Esta función calcula el promedio de las calificaciones (rt_score) de todas las 
 <strong> filterMoviesByScore(data, topScore)</strong><br>
 Esta función filtra las películas por una puntuación mínima (topScore) y devuelve un array con las 10 películas con las puntuaciones más altas, ordenadas de mayor a menor.
 
+## 7. Proyecto:
 
-## 7. Contribuidores
+https://kellyfabiolafc.github.io/DEV004-data-lovers/src/
+
+## 8. Contribuidores
 <strong>Kelly  Flores<em>(floresdelacruzkellyfabiola@gmail.com)</em></strong><br>
 <strong>Alexa Suarez<em>(alexas1903@gmail.com)</em></strong>
 
-## 8. Pruebas unitarias
+## 9. Pruebas unitarias
 
 <h3>Uso:</h3><br>
 La primera prueba es verificar si la filterOfdatafunción devuelve correctamente el título y los personajes de una película con una identificación específica.<br>
