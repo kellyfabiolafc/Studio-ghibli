@@ -3,13 +3,14 @@
 ## Descripción
 La pagina de Studio ghibli se ha creado con la finalidad de proporcionar información detallada y actualizada sobre sus  animaciones .Esto será beneficioso tanto para los fanáticos de la animación como para los investigadores y críticos de cine.interesados en conocer más sobre la obra de esta casa productora.
 La pagina es dinamica y te permite:
-1) Visualizar las animaciones de studio ghibli y mostrar información respecto a cada una de ellas.
-2) Ordenar de manera alfabetica (A-Z) y (Z-A) ,tambien ordenar por fecha de lanzamiento(más recientes) y (menos reciente).
-3) Filtrar personajes , vehiculos y ubicaciones  por animacion seleccionada. 
-4) Visualizar,filtrar y ordenar  top 10 de las animaciones y tambien observar calculo del promedio general.
 
-***
+1) Mostrar información sobre las animaciones de Studio Ghibli y sus personajes, como el título, el director, el productor, la fecha de lanzamiento, la puntuación de Rotten Tomatoes e información sobre los personajes, como sus nombres, edad, género y especie.
 
+2) Mostrar las 10 mejores animaciones de Studio Ghibli según su puntuación en Rotten Tomatoes, un botón para mostrar los personajes de cada animación y botones para mostrar ubicaciones y vehículos relacionados con cada animación.
+
+3)Calcular y muestrar la puntuación media de Rotten Tomatoes de todas las animaciones de Studio Ghibli.
+
+En general, la pagina web  proporciona una interfaz para que los usuarios exploren y aprendan sobre las animaciones de Studio Ghibli y sus personajes, ubicaciones y vehículos relacionados.
 
 ## 1. Historias de Usuario
 Primeras versiones de las historias de usuario que diseñamos en cada sprint 
@@ -24,7 +25,7 @@ Primeras versiones de las historias de usuario que diseñamos en cada sprint
 </p>
 
 ## 2. Prototipos de baja fidelidad
-<p align="center" width="100%"> <img width="100%" src="./src/imagenes/CollagePbaja.jpg">
+<p align="center" width="100%"> <img width="100%" src="./src/imagenes/CollagePbaja.png">
 </p>
 
 ## 3. Prototipo de alta 
@@ -38,43 +39,40 @@ Primeras versiones de las historias de usuario que diseñamos en cada sprint
 </p>
 
 ## 3. Resumen del proyecto
-<h2>Objetivos:</h2>
-Este es un proyecto que tiene como objetivo mostrar información sobre películas del Studio Ghibli. A continuación, se detallan las funciones disponibles en el proyecto.
-<strong>Funciones:</strong>
-filterOfdata(data, id)
+<h4>Objetivos:</h4>
+Este es un proyecto que tiene como objetivo mostrar información sobre películas del Studio Ghibli. A continuación, se detallan las funciones disponibles en el proyecto.<br>
+<strong>Funciones:</strong><br>
+<strong>filterOfdata(data, id)</strong>
 Esta función filtra la información de las películas y devuelve un objeto con el título y los personajes de la película que corresponde con el id proporcionado.
 
-filterOfdata2(data, id)
+<strong>filterOfdata2(data, id)</strong><br>
 Esta función filtra la información de las películas y devuelve un array con los vehículos de la película que corresponde con el id proporcionado.
 
-filterOfdata3(data, id)
+<strong>filterOfdata3(data, id)</strong><br>
 Esta función filtra la información de las películas y devuelve un array con las locaciones de la película que corresponde con el id proporcionado.
 
-sortData(data)
+<strong> sortData(data)</strong><br>
 Esta función ordena la información de las películas por fecha de lanzamiento, de más reciente a más antigua.
 
-sortData2(data)
+<strong> sortData2(data)</strong><br>
 Esta función ordena la información de las películas alfabéticamente por título, de la A a la Z.
 
-sortData3(data)
+<strong> sortData3(data)</strong><br>
 Esta función ordena la información de las películas por fecha de lanzamiento, de más antigua a más reciente.
 
-sortData4(data)
+<strong> sortData4(data)</strong><br>
 Esta función ordena la información de las películas alfabéticamente por título, de la Z a la A.
 
-calculoData(data)
+<strong> calculoData(data)</strong><br>
 Esta función calcula el promedio de las calificaciones (rt_score) de todas las películas.
 
-filterMoviesByScore(data, topScore)
+<strong> filterMoviesByScore(data, topScore)</strong><br>
 Esta función filtra las películas por una puntuación mínima (topScore) y devuelve un array con las 10 películas con las puntuaciones más altas, ordenadas de mayor a menor.
-<h2>Definicion:</h2>
 
- El código muestra información sobre las animaciones de Studio Ghibli y sus personajes, como el título, el director, el productor, la fecha de lanzamiento, la puntuación de Rotten Tomatoes e información sobre los personajes, como sus nombres, edad, género y especie.
 
-El código también tiene un botón para mostrar las 10 mejores animaciones de Studio Ghibli según su puntuación en Rotten Tomatoes, un botón para mostrar los personajes de cada animación y botones para mostrar ubicaciones y vehículos relacionados con cada animación.
-
-El código también calcula y muestra la puntuación media de Rotten Tomatoes de todas las animaciones de Studio Ghibli.
-
+## 5. Contribuidores
+<strong>Kelly  Flores<em>(floresdelacruzkellyfabiola@gmail.com)</em></strong>
+<strong>Alexa Suarez</em>(alexas1903@gmail.com)</em></strong>
 
 ## 4. Objetivos de aprendizaje
 
