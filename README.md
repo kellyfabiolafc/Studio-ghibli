@@ -74,7 +74,8 @@ Esta función filtra las películas por una puntuación mínima (topScore) y dev
 <strong>Kelly  Flores<em>(floresdelacruzkellyfabiola@gmail.com)</em></strong><br>
 <strong>Alexa Suarez<em>(alexas1903@gmail.com)</em></strong>
 
-### 8. Pruebas unitarias
+## 8. Pruebas unitarias
+
 <h3>Uso:</h3><br>
 La primera prueba es verificar si la filterOfdatafunción devuelve correctamente el título y los personajes de una película con una identificación específica.<br>
 La segunda prueba es verificar si la filterOfdata2función devuelve correctamente los vehículos de una película con una identificación específica.<br>
