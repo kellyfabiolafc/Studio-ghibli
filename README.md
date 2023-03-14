@@ -13,11 +13,11 @@ La pagina es dinamica y te permite:
 
 ## 1. Historias de Usuario
 Primeras versiones de las historias de usuario que diseñamos en cada sprint 
-(src\imagenes\HistoriasU.png)
+(.\src\imagenes\HistoriasU.png)
 ## 2. Prototipos de baja fidelidad
-(src\imagenes\CollagePbaja.jpg)
+(.\src\imagenes\CollagePbaja.jpg)
 ## 3. Prototipo de alta 
-(src\imagenes\inicial.png)
+(.\src\imagenes\inicial.png)
 ## 3. Resumen del proyecto
 
 En este proyecto **construirás una _página web_ para visualizar un
