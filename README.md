@@ -13,13 +13,25 @@ La pagina es dinamica y te permite:
 
 ## 1. Historias de Usuario
 Primeras versiones de las historias de usuario que diseñamos en cada sprint 
-![Pantalla de historias de usuario](.\src\imagenes\HistoriasU.png)
+
+<p align="center" width="100%"> <img width="33%" src="./src/imagenes/HistoriasU.png">
+</p>
+
+
 ## 2. Criterios de aceptacion y determinado
-![Pantalla de criterios de aceptacion](.\src\imagenes\CriteriosHU.png)
+
+<p align="center" width="100%"> <img width="33%" src="./src/imagenes/CriteriosHU.png">
+</p>
+
 ## 2. Prototipos de baja fidelidad
-![Pantalla de prototipo de baja](.\src\imagenes\CollagePbaja.jpg)
+<p align="center" width="100%"> <img width="33%" src="./src/imagenes/CollagePbaja.jpg">
+</p>
+
 ## 3. Prototipo de alta 
-![Pantalla de prototitpo de alta](.\src\imagenes\inicial.png)
+<p align="center" width="100%">
+    <img width="33%" src="./src/imagenes/inicial.png"> 
+</p>
+
 ## 3. Resumen del proyecto
 
 En este proyecto **construirás una _página web_ para visualizar un
