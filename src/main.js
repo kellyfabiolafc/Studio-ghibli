@@ -12,15 +12,18 @@ import {
   calculoData,
   filterMoviesByScore,
 } from "./data.js";
-// Se crea una funcion para mostrar las animaciones y para insertar sus informaciones 
+// Se crea una funcion para mostrar las animaciones y para insertar sus informaciones
 const mostrarAnimaciones = (data) => {
+  const volver = document.getElementById("btnvolver");
+  volver.classList.add("oculto"); //oculto gracias a la clase CSS "oculto".
   const peliculasContainer = document.querySelector(".main-container");
   peliculasContainer.innerHTML = "";
   const h1 = document.getElementById("Anuncio");
   h1.textContent = "";
-  for (const pelicula of data) {                    //se utiliza el ciclo con sintaxis for of para recorrer el objeto iterable
+  for (const pelicula of data) {
+    //se utiliza el ciclo con sintaxis for of para recorrer el objeto iterable
     const peliculaElem = document.createElement("section");
-    peliculaElem.className = "contenedorHijo";     //agregamos una clase al elemento creado y abajo usamos template string para 
+    peliculaElem.className = "contenedorHijo"; //agregamos una clase al elemento creado y abajo usamos template string para
     peliculaElem.innerHTML = `  
       <h2 class="titulo">${pelicula.title}</h2>  
       <div class="pelicula-img-container">
@@ -40,16 +43,20 @@ const mostrarAnimaciones = (data) => {
       </div>
     </div>
   `;
-    peliculaElem.addEventListener("mouseenter", () => {   //agregamos un escuchador de eventos para agregar el evento mouseenter y mostrar lo que esta oculto 
+    peliculaElem.addEventListener("mouseenter", () => {
+      //agregamos un escuchador de eventos para agregar el evento mouseenter y mostrar lo que esta oculto
       peliculaElem.querySelector(".info").style.display = "block";
     });
-    peliculaElem.addEventListener("mouseleave", () => { // hacemos lo mismo que arriba solo que este evento ocurrira cuando el cursor se quite del elemento antes seleccionado
+    peliculaElem.addEventListener("mouseleave", () => {
+      // hacemos lo mismo que arriba solo que este evento ocurrira cuando el cursor se quite del elemento antes seleccionado
       peliculaElem.querySelector(".info").style.display = "none";
     });
     peliculasContainer.appendChild(peliculaElem);
     // seleccionamos  todos los botones de las animaciones creadas y los recorremos.
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
-      btn.addEventListener("click", function (e) {  // Por cada boton iterado se activara un addeventlis
+      btn.addEventListener("click", function (e) {
+        // Por cada boton iterado se activara un addeventlis
+        volver.classList.remove("oculto"); //eliminamos la clase
         const characterContainer = document.querySelector(".main-container");
         characterContainer.innerHTML = "";
         const h1 = document.getElementById("Anuncio");
@@ -86,10 +93,12 @@ const mostrarAnimaciones = (data) => {
 
     const buttonTop10 = document.getElementById("top-10"); // accedemos al boton para añadirle un evento click el cual desencadera una funcion
     buttonTop10.addEventListener("click", function () {
-      const h2 = document.getElementById("Anuncio");//accedemos al elemnto vacio en el dom
+      volver.classList.remove("oculto");
+      const h2 = document.getElementById("Anuncio"); //accedemos al elemnto vacio en el dom
       h2.innerHTML = //establecemos el contenido dentro del elemnto seleccionado
         "¿Sabías que Studio Ghibli es considerado uno de los <br>mejores estudios de animación en todo el mundo?";
-      h2.addEventListener("mouseenter", function () {  //añadimos un evento al elemento para mostrar un elemento oculto al pasar el cursor
+      h2.addEventListener("mouseenter", function () {
+        //añadimos un evento al elemento para mostrar un elemento oculto al pasar el cursor
         const h1 = document.getElementById("AnuncioPromedio");
         h1.innerHTML =
           "El promedio general de puntuación de las animaciones de Studio Ghibli es del " +
@@ -97,16 +106,17 @@ const mostrarAnimaciones = (data) => {
           "  ¡Eso es increíble! Significa que la gran mayoría de las películas de Studio Ghibli han sido muy bien recibidas tanto por la crítica como por el público en general. ¡Definitivamente vale la pena verlas!";
         document.getElementById("AnuncioPromedio").style.display = "block";
       });
-      h2.addEventListener("mouseleave", () => {   //este evento hara que cuando saquemos el cursor del elemnto seleccionado ,el elemento anteriormente seleccionado vuelva a estar oculto
+      h2.addEventListener("mouseleave", () => {
+        //este evento hara que cuando saquemos el cursor del elemnto seleccionado ,el elemento anteriormente seleccionado vuelva a estar oculto
         document.getElementById("AnuncioPromedio").style.display = "none";
       });
 
       const contenedortop = document.querySelector(".main-container"); //nos adentramos al contenedor descrito y lo alamacenamos para manipularlo.
       contenedortop.innerHTML = ""; //limpiamos el contenedor
-      const PromedioGeneral = calculoData(data); // llamamos la funcion de calcular y le pasamos la data como argumento 
+      const PromedioGeneral = calculoData(data); // llamamos la funcion de calcular y le pasamos la data como argumento
       const top = filterMoviesByScore(data, PromedioGeneral); // llamamos a la funcion filterscore y le pasamos como argumento la data y el calculo
-      top.forEach((top10) => { // recorremos el nuevo array 
-        const calculoElem = document.createElement("section"); 
+      top.forEach((top10) => {
+        const calculoElem = document.createElement("section");
         calculoElem.className = "contenedorHijo";
         calculoElem.innerHTML = `     
         <h2 class="titulo">${top10.title}</h2>
@@ -132,10 +142,12 @@ const mostrarAnimaciones = (data) => {
 
     peliculaElem.querySelectorAll(".btnlocaciones").forEach((button) => {
       button.addEventListener("click", function (e) {
+        volver.classList.remove("oculto");
         const containerLocations = document.querySelector(".main-container");
         containerLocations.innerHTML = "";
         const locaciones = filterOfdata3(data, e.target.id); // arreglo de locaciones
-        if (locaciones.length === 0) { //utilizamos condicionales para verificar si la longitud del arreglo locaciones  es igual a 0 
+        if (locaciones.length === 0) {
+          //utilizamos condicionales para verificar si la longitud del arreglo locaciones  es igual a 0
           const containerLocations = document.querySelector(".main-container"); // en caso de que si insertamos imagen y texto diciendo que la informacion no se encuentra
           containerLocations.innerHTML = `<div class="noInformacion">
           <div class="contenedorInfo"> 
@@ -144,7 +156,8 @@ const mostrarAnimaciones = (data) => {
           <p>"Lo siento, parece que no hay información disponible para este campo. Pero no te desanimes, sigue explorando y seguro que encontrarás lo que buscas.
           </p>
           </div>`;
-        } else { //en caso de que si hayan arreglos con contenido , se recorre el array y extraemos las coincidencias en cada iteracion de locaciones 
+        } else {
+          //en caso de que si hayan arreglos con contenido , se recorre el array y extraemos las coincidencias en cada iteracion de locaciones
           locaciones.forEach((locaciones) => {
             const locationElem = document.createElement("section");
             locationElem.className = "contenedorHijo";
@@ -172,9 +185,10 @@ const mostrarAnimaciones = (data) => {
     });
     peliculaElem.querySelectorAll(".btnvehiculos").forEach((buttonTop10) => {
       buttonTop10.addEventListener("click", function (e) {
+        volver.classList.remove("oculto");
         const animationContainer = document.querySelector(".main-container");
         animationContainer.innerHTML = "";
-        const vehicles = filterOfdata2(data, e.target.id); // arreglo de vehiculos , el target es una propiedad del objeto de evento que hace referencia al elemento que desencadenó el evento 
+        const vehicles = filterOfdata2(data, e.target.id); // arreglo de vehiculos , el target es una propiedad del objeto de evento que hace referencia al elemento que desencadenó el evento
         if (vehicles.length === 0) {
           const animationContainer = document.querySelector(".main-container");
           animationContainer.innerHTML = `<div class="noInformacion">
@@ -213,11 +227,11 @@ const mostrarAnimaciones = (data) => {
     });
   }
 };
-mostrarAnimaciones(data.films); //llamamos la funcion y le pasamos como argumento la data que ha sido importada 
+mostrarAnimaciones(data.films); //llamamos la funcion y le pasamos como argumento la data que ha sido importada
 
 //Invocamos a las funciones importadas y las añadimos a las que coincidan con las opciones selecionadas.
 const select = document.querySelector("#ordenar");
-select.addEventListener("change", function () { 
+select.addEventListener("change", function () {
   const value = select.value;
   if (value === "recientes") {
     const dataOrdenada = sortData(data.films); // Ordenar por más recientes
@@ -234,7 +248,8 @@ select.addEventListener("change", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () { /*evento que ocurre en JavaScript cuando el documento HTML
+document.addEventListener("DOMContentLoaded", function () {
+  /*evento que ocurre en JavaScript cuando el documento HTML
    ha sido completamente cargado y analizado, sin necesidad de esperar que se hayan descargado todos los recursos externos
     (como imágenes o estilos). */
   const volver = document.getElementById("btnvolver");

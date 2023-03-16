@@ -108,7 +108,9 @@ body {
   margin-top: 4%;
   margin-bottom: 5%;
 }
-
+.oculto{
+  display: none;
+}
 nav {
   display: flex;
   align-items: center;
