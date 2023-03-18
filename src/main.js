@@ -14,8 +14,12 @@ import {
 } from "./data.js";
 // Se crea una funcion para mostrar las animaciones y para insertar sus informaciones
 const mostrarAnimaciones = (data) => {
+  const buttonTop10= document.getElementById("top-10");
+  buttonTop10.classList.remove("top10oculto");
   const volver = document.getElementById("btnvolver");
-  volver.classList.add("oculto"); //oculto gracias a la clase CSS "oculto".
+  volver.classList.add("volveroculto");
+  const selectvolver=document.getElementById("ordenar");
+  selectvolver.classList.remove("selectOculto");//volveroculto gracias a la clase CSS "volveroculto".
   const peliculasContainer = document.querySelector(".main-container");
   peliculasContainer.innerHTML = "";
   const h1 = document.getElementById("Anuncio");
@@ -44,7 +48,7 @@ const mostrarAnimaciones = (data) => {
     </div>
   `;
     peliculaElem.addEventListener("mouseenter", () => {
-      //agregamos un escuchador de eventos para agregar el evento mouseenter y mostrar lo que esta oculto
+      //agregamos un escuchador de eventos para agregar el evento mouseenter y mostrar lo que esta volveroculto
       peliculaElem.querySelector(".info").style.display = "block";
     });
     peliculaElem.addEventListener("mouseleave", () => {
@@ -56,7 +60,9 @@ const mostrarAnimaciones = (data) => {
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
       btn.addEventListener("click", function (e) {
         // Por cada boton iterado se activara un addeventlis
-        volver.classList.remove("oculto"); //eliminamos la clase
+
+        volver.classList.remove("volveroculto"); //eliminamos la clase
+        selectvolver.classList.add("selectOculto");
         const characterContainer = document.querySelector(".main-container");
         characterContainer.innerHTML = "";
         const h1 = document.getElementById("Anuncio");
@@ -93,12 +99,14 @@ const mostrarAnimaciones = (data) => {
 
     const buttonTop10 = document.getElementById("top-10"); // accedemos al boton para añadirle un evento click el cual desencadera una funcion
     buttonTop10.addEventListener("click", function () {
-      volver.classList.remove("oculto");
+      buttonTop10.classList.add("top10oculto");
+      volver.classList.remove("volveroculto");
+      selectvolver.classList.add("selectOculto");
       const h2 = document.getElementById("Anuncio"); //accedemos al elemnto vacio en el dom
       h2.innerHTML = //establecemos el contenido dentro del elemnto seleccionado
         "¿Sabías que Studio Ghibli es considerado uno de los <br>mejores estudios de animación en todo el mundo?";
       h2.addEventListener("mouseenter", function () {
-        //añadimos un evento al elemento para mostrar un elemento oculto al pasar el cursor
+        //añadimos un evento al elemento para mostrar un elemento volveroculto al pasar el cursor
         const h1 = document.getElementById("AnuncioPromedio");
         h1.innerHTML =
           "El promedio general de puntuación de las animaciones de Studio Ghibli es del " +
@@ -107,7 +115,7 @@ const mostrarAnimaciones = (data) => {
         document.getElementById("AnuncioPromedio").style.display = "block";
       });
       h2.addEventListener("mouseleave", () => {
-        //este evento hara que cuando saquemos el cursor del elemnto seleccionado ,el elemento anteriormente seleccionado vuelva a estar oculto
+        //este evento hara que cuando saquemos el cursor del elemnto seleccionado ,el elemento anteriormente seleccionado vuelva a estar volveroculto
         document.getElementById("AnuncioPromedio").style.display = "none";
       });
 
@@ -142,7 +150,8 @@ const mostrarAnimaciones = (data) => {
 
     peliculaElem.querySelectorAll(".btnlocaciones").forEach((button) => {
       button.addEventListener("click", function (e) {
-        volver.classList.remove("oculto");
+        volver.classList.remove("volveroculto");
+        selectvolver.classList.add("selectOculto");
         const containerLocations = document.querySelector(".main-container");
         containerLocations.innerHTML = "";
         const locaciones = filterOfdata3(data, e.target.id); // arreglo de locaciones
@@ -185,7 +194,8 @@ const mostrarAnimaciones = (data) => {
     });
     peliculaElem.querySelectorAll(".btnvehiculos").forEach((buttonTop10) => {
       buttonTop10.addEventListener("click", function (e) {
-        volver.classList.remove("oculto");
+        volver.classList.remove("volveroculto");
+        selectvolver.classList.add("selectOculto");
         const animationContainer = document.querySelector(".main-container");
         animationContainer.innerHTML = "";
         const vehicles = filterOfdata2(data, e.target.id); // arreglo de vehiculos , el target es una propiedad del objeto de evento que hace referencia al elemento que desencadenó el evento

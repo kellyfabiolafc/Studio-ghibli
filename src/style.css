@@ -108,7 +108,13 @@ body {
   margin-top: 4%;
   margin-bottom: 5%;
 }
-.oculto{
+.volveroculto{
+  display: none;
+}
+.top10oculto{
+  display: none;
+}
+.selectOculto{
   display: none;
 }
 nav {
