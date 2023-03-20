@@ -19,7 +19,7 @@ const mostrarAnimaciones = (data) => {
   const volver = document.getElementById("btnvolver");
   volver.classList.add("volveroculto");
   const selectvolver=document.getElementById("ordenar");
-  selectvolver.classList.remove("selectOculto");//volveroculto gracias a la clase CSS "volveroculto".
+  selectvolver.classList.remove("selectOculto");//select oculto gracias a la clase CSS "volveroculto".
   const peliculasContainer = document.querySelector(".main-container");
   peliculasContainer.innerHTML = "";
   const h1 = document.getElementById("Anuncio");
@@ -57,10 +57,12 @@ const mostrarAnimaciones = (data) => {
     });
     peliculasContainer.appendChild(peliculaElem);
     // seleccionamos  todos los botones de las animaciones creadas y los recorremos.
+
+
+
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
       btn.addEventListener("click", function (e) {
         // Por cada boton iterado se activara un addeventlis
-
         volver.classList.remove("volveroculto"); //eliminamos la clase
         selectvolver.classList.add("selectOculto");
         const characterContainer = document.querySelector(".main-container");
@@ -69,7 +71,10 @@ const mostrarAnimaciones = (data) => {
         h1.addEventListener("mouseenter", function () {
           document.getElementById("AnuncioPromedio").style.display = "none";
         });
+        //target se refiere al elemento que desencadenó el evento, es decir, el botón en sí mismo. 
+        //La propiedad id de e.target se utiliza para obtener el valor del atributo id del botón que se ha hecho clic.
         const personajes = filterOfdata(data, e.target.id); // Este filtro devuelve un nuevo arreglo de personajes
+        // e.target.id  para identificar qué película se ha seleccionado y obtener los datos asociados a ella.
         h1.textContent = "Personajes de la animación: " + pelicula.title;
         personajes.characters.forEach((personaje) => {
           const personajeElem = document.createElement("div");
@@ -96,6 +101,8 @@ const mostrarAnimaciones = (data) => {
         });
       });
     });
+
+
 
     const buttonTop10 = document.getElementById("top-10"); // accedemos al boton para añadirle un evento click el cual desencadera una funcion
     buttonTop10.addEventListener("click", function () {
@@ -148,6 +155,9 @@ const mostrarAnimaciones = (data) => {
       });
     });
 
+
+
+
     peliculaElem.querySelectorAll(".btnlocaciones").forEach((button) => {
       button.addEventListener("click", function (e) {
         volver.classList.remove("volveroculto");
@@ -162,7 +172,7 @@ const mostrarAnimaciones = (data) => {
           <div class="contenedorInfo"> 
           <img src="https://i.pinimg.com/originals/bb/9d/ac/bb9dacf5825fc1596b2b7a3d4e8ada3d.gif">
           </div>
-          <p>"Lo siento, parece que no hay información disponible para este campo. Pero no te desanimes, sigue explorando y seguro que encontrarás lo que buscas.
+          <p>Lo siento, parece que no hay información disponible para este campo. Pero no te desanimes, sigue explorando y seguro que encontrarás lo que buscas.
           </p>
           </div>`;
         } else {
@@ -192,6 +202,9 @@ const mostrarAnimaciones = (data) => {
         }
       });
     });
+
+
+
     peliculaElem.querySelectorAll(".btnvehiculos").forEach((buttonTop10) => {
       buttonTop10.addEventListener("click", function (e) {
         volver.classList.remove("volveroculto");
@@ -211,7 +224,6 @@ const mostrarAnimaciones = (data) => {
         } else {
           vehicles.forEach((vehicles) => {
             const vehiculosElem = document.createElement("section");
-            vehiculosElem.className = "contenedordeVehiculos";
             vehiculosElem.className = "contenedorHijo";
             vehiculosElem.innerHTML = `<h2 class="titulo">${vehicles.name}</h2>
         <article class="vehiculos-img-container">
@@ -237,7 +249,11 @@ const mostrarAnimaciones = (data) => {
     });
   }
 };
+
 mostrarAnimaciones(data.films); //llamamos la funcion y le pasamos como argumento la data que ha sido importada
+
+
+
 
 //Invocamos a las funciones importadas y las añadimos a las que coincidan con las opciones selecionadas.
 const select = document.querySelector("#ordenar");

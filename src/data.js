@@ -45,14 +45,10 @@ export const calculoData = (data) => {
   const sumatoria = data.reduce((acumulado, actual) => {
     return acumulado + parseFloat(actual.rt_score);
   }, 0);
-
   const promedio = sumatoria / data.length;
   return promedio;
 };
-/*
-export const filterMoviesByScore=(data, rt_score) =>{
-  return data.filter(data => parseInt(data.rt_score) > rt_score);
-}*/
+
 export const filterMoviesByScore = (data, topScore) => {
   return data
     .filter((movie) => parseInt(movie.rt_score) >= topScore)

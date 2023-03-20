@@ -140,7 +140,6 @@ describe("sortData4", () => {
 describe("calculoData", () =>
   it("deberia calcular el promedio general de toda la puntuacion de rottem ", () => {
     const data = [{ rt_score: 91 }, { rt_score: 94 }, { rt_score: 100 }];
-
     const calculo = calculoData(data);
     const promedio = calculo;
     expect(calculo).toEqual(promedio);

@@ -49,11 +49,6 @@ h2 {
   width: 10px; /* Ancho del scrollbar */
 }
 
-/* Estilo de la pista del scrollbar */
-::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Color de fondo de la pista del scrollbar */
-}
-
 /* Estilo del thumb del scrollbar */
 ::-webkit-scrollbar-thumb {
   background-color: #77bd9d; /* Color de fondo del thumb del scrollbar */
@@ -121,8 +116,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 10px;
-  font-family: "Nunito Sans";
 }
 .selectordeOrden {
   text-align: center;
