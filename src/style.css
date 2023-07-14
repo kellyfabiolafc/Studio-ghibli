@@ -1,42 +1,18 @@
 header {
-  background-color: #00796b;
+background-color: #A6CF6F;
   color: #fdfffd;
-  font-size: 300%;
+  font-size: 150%;
   width: 100%;
   display: flex;
   align-items: center; /*alinea los elemntos dentro del header*/
-  justify-content: center;
-  height: 250px;
+  justify-content: space-around;
+  height: 150px;
   font-family: "Phudu";
 }
-.noInformacion {
-  text-align: center;
-  display: flex;  /*diseño flexible y adaptable para los elementos hijos de un contenedor.*/
-  flex-wrap: wrap; /*especifica que los elementos hijos del contenedor deben envolverse en 
-  varias líneas si no tienen suficiente espacio horizontal en una sola fila.*/
-  justify-content: space-evenly;/*distribuye los elementos hijos del contenedor con un espacio uniforme entre ellos*/
-  font-family: "Rubik";
-}
-
-.noInformacion img {
-  width: 320px;
-  height: 400px;
-  margin: 20px;
-}
-
-.contenedorInfo {
-  background-image: linear-gradient(rgb(77, 139, 95), #9b9775);
-  margin: 1.5%;
-}
-#subtitulo-general {
-  font-size: 200%;
-  margin: 2%;
-  color: black;
-  text-shadow: none;
-}
 header img {
-  width: 350px;
-  height: 300px;
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
 }
 h2 {
   font-family: "Abel";
@@ -44,21 +20,7 @@ h2 {
   margin-top: 2%;
   text-shadow: 2px 2px 5px rgb(249, 239, 242);
 }
-/* Estilo general del scrollbar */
-::-webkit-scrollbar {
-  width: 10px; /* Ancho del scrollbar */
-}
 
-/* Estilo del thumb del scrollbar */
-::-webkit-scrollbar-thumb {
-  background-color: #77bd9d; /* Color de fondo del thumb del scrollbar */
-  border-radius: 10px; /* Radio de borde del thumb del scrollbar */
-}
-
-/* Estilo del botón del scrollbar */
-::-webkit-scrollbar-button {
-  background-color: #fa7bbb; /* Color de fondo del botón del scrollbar */
-}
 
 #Anuncio {
   margin: auto;
@@ -90,10 +52,49 @@ h2 {
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #c7dfdf;
+  background-color: #E7F2D2;
   font-family: "Abel";
 }
+/* Estilo general del scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho del scrollbar */
+}
 
+/* Estilo del thumb del scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #A6CF6F; /* Color de fondo del thumb del scrollbar */
+  border-radius: 10px; /* Radio de borde del thumb del scrollbar */
+}
+
+/* Estilo del botón del scrollbar */
+::-webkit-scrollbar-button {
+  background-color: #E7F2D2; /* Color de fondo del botón del scrollbar */
+}
+
+.noInformacion {
+  text-align: center;
+  display: flex;  /*diseño flexible y adaptable para los elementos hijos de un contenedor.*/
+  flex-wrap: wrap; /*especifica que los elementos hijos del contenedor deben envolverse en 
+  varias líneas si no tienen suficiente espacio horizontal en una sola fila.*/
+  justify-content: space-evenly;/*distribuye los elementos hijos del contenedor con un espacio uniforme entre ellos*/
+  font-family: "Rubik";
+}
+
+.noInformacion img {
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+}
+
+.contenedorInfo {
+  margin: 1.5%;
+}
+#subtitulo-general {
+  font-size: 200%;
+  margin: 2%;
+  color: black;
+  text-shadow: none;
+}
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -123,14 +124,14 @@ nav {
   height: 40px;
   width: 140px;
   font-size: 17px;
-  background-color: #83d1ae;
+  background-color: #A6CF6F;
   border-radius: 10px;
   border: none;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 .site-footer {
-  background-color: rgb(0, 121, 107);
+  background-color: #A6CF6F;
   color: white;
   padding: 20px;
 }
@@ -165,7 +166,7 @@ nav button {
   height: 40px;
   width: 140px;
   font-size: 17px;
-  background-color: #83d1ae;
+  background-color: #A6CF6F;
   border: none;
   border-radius: 10px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
@@ -175,21 +176,28 @@ nav button {
 .pelicula-img-container {
   position: relative; /*definimos el tipo de posicionamiento de un elemento */
   /*posiciona el elemento de forma relativa a su posición original en el flujo normal del documento*/
+  display: flex;
+  justify-content: center;
+
 }
 
 .pelicula-img-container img {
   display: block;
   width: 320px;
   height: 400px;
-  margin: 20px;
+  object-fit: cover;
+  border-style: solid;
+    border-width: 1px;
+    border-color: #d8bae5;
+    border-radius: 8px;
 }
 
 .pelicula-img-container .info {
   position: absolute; /*posiciona el elemento de forma absoluta en relación al primer elemento padre (pelicula-img-container)*/
   top: 0;
-  left: 20px;
+  left: 15px;
   bottom: 0;
-  right: 20px;
+  right: 15px;
   color: white;
   background-color: rgba(14, 18, 17, 0.8);
   display: none;
@@ -197,7 +205,7 @@ nav button {
   height: auto;
   overflow: auto;
   text-align: center;
-  padding: 30px;
+  padding: 15px;
 }
 .vehiculos-img-container {
   position: relative;
@@ -227,6 +235,7 @@ nav button {
 .vehiculos-img-container .info p {
   margin: 0;
   line-height: 1.5;
+  text-align: initial;
 }
 .vehiculos-img-container .info p span {
   font-weight: bold;
@@ -235,8 +244,8 @@ nav button {
   position: relative;
 }
 .pelicula-img-container button {
-  background: #fa7bbb;
-  color: #fff;
+  background: #E7F2D2;
+  color: #080808;
   padding: 10px 10px;
   border-radius: 50px;
   width: 120px;
@@ -253,9 +262,9 @@ nav button {
 .personajes-img-container .info {
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 15px;
   bottom: 0;
-  right: 20px;
+  right: 15px;
   color: white;
   background-color: rgba(14, 18, 17, 0.8);
   display: none;
@@ -268,6 +277,7 @@ nav button {
 .pelicula-img-container .info p {
   margin: 0;
   line-height: 1.5;
+  text-align: initial;
 }
 
 .pelicula-img-container .info p span {
@@ -282,12 +292,14 @@ nav button {
 }
 
 .pelicula-img-container button:hover {
-  background-color: #83d1ae;
+  background-color: #A6CF6F;
+  color: #E7F2D2;
 }
 
 .personajes-img-container .info p {
   margin: 0;
   line-height: 1.5;
+  text-align: initial;
 }
 .personajes-img-container .info p span {
   font-weight: bold;
@@ -317,9 +329,12 @@ nav button {
   margin: 20px;
 }
 .contenedorHijo {
-  /*background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);*/
-  background-image: linear-gradient(rgb(77, 139, 95), #9b9775);
+  background-color: #fdfffd;
   margin: 1.5%;
+  border-radius: 20px;
+  width: 387px;
+  padding: 20px 0px;
+  box-shadow: 0px 4px 10px 0px rgba(226,186,229,.5);
 }
 
 /*He incluido este media query para telefonos*/
@@ -338,7 +353,7 @@ nav button {
     font-size: 150%;
   }
   #Anuncio {
-    font-size: 30px;
+    font-size: 15px;
     margin-top: 5%;
     margin: 10%;
     margin-bottom: 0%;
@@ -347,12 +362,10 @@ nav button {
   
   .contenedorHijo {
     /*background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);*/
-    background-image: linear-gradient(rgb(77, 139, 95), #9b9775);
-    margin: auto;
     margin-bottom: 5%;
   }
   header {
-    background-color: #00796b;
+  background-color: #A6CF6F;;
     color: #fdfffd;
     font-size: 190%;
     width: 100%;
@@ -380,12 +393,7 @@ Esto significa que se aplica a dispositivos con una pantalla más pequeña que l
     margin: 2%;
     margin-top: 5%;
   }
-  .contenedorHijo {
-    /*background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);*/
-    background-image: linear-gradient(rgb(77, 139, 95), #9b9775);
-    margin: auto;
-    margin-bottom: 5%;
-  }
+
   nav {
     display: flex;
     align-items: center;
@@ -402,7 +410,7 @@ Esto significa que se aplica a dispositivos con una pantalla más pequeña que l
     height: 40px;
     width: 140px;
     font-size: 17px;
-    background-color: #83d1ae;
+    background-color: #A6CF6F;
     border: none;
     border-radius: 10px;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
@@ -414,7 +422,7 @@ Esto significa que se aplica a dispositivos con una pantalla más pequeña que l
     height: 40px;
     width: 120px;
     font-size: 17px;
-    background-color: #83d1ae;
+    background-color: #A6CF6F;
     border-radius: 10px;
     border: none;
     margin-right: 2%;
