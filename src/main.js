@@ -14,12 +14,12 @@ import {
 } from "./data.js";
 // Se crea una funcion para mostrar las animaciones y para insertar sus informaciones
 const mostrarAnimaciones = (data) => {
-  const buttonTop10= document.getElementById("top-10");
+  const buttonTop10 = document.getElementById("top-10");
   buttonTop10.classList.remove("top10oculto");
   const volver = document.getElementById("btnvolver");
   volver.classList.add("volveroculto");
-  const selectvolver=document.getElementById("ordenar");
-  selectvolver.classList.remove("selectOculto");//select oculto gracias a la clase CSS "volveroculto".
+  const selectvolver = document.getElementById("ordenar");
+  selectvolver.classList.remove("selectOculto"); //select oculto gracias a la clase CSS "volveroculto".
   const peliculasContainer = document.querySelector(".main-container");
   peliculasContainer.innerHTML = "";
   const h1 = document.getElementById("Anuncio");
@@ -59,8 +59,6 @@ const mostrarAnimaciones = (data) => {
     peliculasContainer.appendChild(peliculaElem);
     // seleccionamos  todos los botones de las animaciones creadas y los recorremos.
 
-
-
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
       btn.addEventListener("click", function (e) {
         // Por cada boton iterado se activara un addeventlis
@@ -72,7 +70,7 @@ const mostrarAnimaciones = (data) => {
         h1.addEventListener("mouseenter", function () {
           document.getElementById("AnuncioPromedio").style.display = "none";
         });
-        //target se refiere al elemento que desencadenó el evento, es decir, el botón en sí mismo. 
+        //target se refiere al elemento que desencadenó el evento, es decir, el botón en sí mismo.
         //La propiedad id de e.target se utiliza para obtener el valor del atributo id del botón que se ha hecho clic.
         const personajes = filterOfdata(data, e.target.id); // Este filtro devuelve un nuevo arreglo de personajes
         // e.target.id  para identificar qué película se ha seleccionado y obtener los datos asociados a ella.
@@ -104,8 +102,6 @@ const mostrarAnimaciones = (data) => {
         });
       });
     });
-
-
 
     const buttonTop10 = document.getElementById("top-10"); // accedemos al boton para añadirle un evento click el cual desencadera una funcion
     buttonTop10.addEventListener("click", function () {
@@ -158,9 +154,6 @@ const mostrarAnimaciones = (data) => {
       });
     });
 
-
-
-
     peliculaElem.querySelectorAll(".btnlocaciones").forEach((button) => {
       button.addEventListener("click", function (e) {
         volver.classList.remove("volveroculto");
@@ -207,8 +200,6 @@ const mostrarAnimaciones = (data) => {
         }
       });
     });
-
-
 
     peliculaElem.querySelectorAll(".btnvehiculos").forEach((buttonTop10) => {
       buttonTop10.addEventListener("click", function (e) {
@@ -258,9 +249,6 @@ const mostrarAnimaciones = (data) => {
 };
 
 mostrarAnimaciones(data.films); //llamamos la funcion y le pasamos como argumento la data que ha sido importada
-
-
-
 
 //Invocamos a las funciones importadas y las añadimos a las que coincidan con las opciones selecionadas.
 const select = document.querySelector("#ordenar");
