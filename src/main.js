@@ -30,15 +30,16 @@ const mostrarAnimaciones = (data) => {
     peliculaElem.className = "contenedorHijo"; //agregamos una clase al elemento creado y abajo usamos template string para
     peliculaElem.innerHTML = `  
       <h2 class="titulo">${pelicula.title}</h2>  
-      <div class="pelicula-img-container">
+      <div class="pelicula-img-container card-img-container">
         <img src="${pelicula.poster}" alt="${pelicula.title}">
         <div class="info">
-          <p>${pelicula.description}</p>
+          <p class="description">${pelicula.description}</p>
+          <div class="contenedor-caracteristicas">
           <p>Director: <span class="director">${pelicula.director}</span></p>
           <p>Productor: <span class="productor">${pelicula.producer}</span></p>
           <p>Año de lanzamiento: <span class="fecha-lanzamiento">${pelicula.release_date}</span></p>
-          <p>Puntuación de Rotten Tomatoes: <span class="puntuacion">${pelicula.rt_score}</span></p>
-          <div class="contenedorBtn">
+          <p>Puntuación de Rotten Tomatoes: <span class="puntuacion">${pelicula.rt_score}</span></p></div>
+          <div class="contenedorBtn btns">
           <button id='${pelicula.id}' class='btnpersonajes'>Personajes</button>
           <button id='${pelicula.id}' class='btnlocaciones'>locaciones</button>
           <button id='${pelicula.id}' class='btnvehiculos'>vehiculos</button>
@@ -80,14 +81,16 @@ const mostrarAnimaciones = (data) => {
           const personajeElem = document.createElement("div");
           personajeElem.className = "contenedorHijo";
           personajeElem.innerHTML = `<h2 class="titulo">${personaje.name}</h2>
-          <article class="personajes-img-container">
+          <article class="personajes-img-container card-img-container">
             <img src="${personaje.img}" alt="${personaje.name}">
             <article class="info">
+            <div class="contenedor-caracteristicas">
               <p>Gender: <span class="gender">${personaje.gender}</span></p>
               <p>Age: <span class="age">${personaje.age}</span></p>
               <p>Eye Color: <span class="eye-color">${personaje.eye_color}</span></p>
               <p>Hair Color: <span class="hair-color">${personaje.hair_color}</span></p>
               <p>Species: <span class="species">${personaje.specie}</span></p>
+              </div>
             </article>
           </article>
         `;
@@ -135,11 +138,11 @@ const mostrarAnimaciones = (data) => {
         calculoElem.className = "contenedorHijo";
         calculoElem.innerHTML = `     
         <h2 class="titulo">${top10.title}</h2>
-        <div class="pelicula-img-container">
+        <div class="pelicula-img-container card-img-container">
           <img src="${top10.poster}" alt="${pelicula.title}">
           <div class="info">
-            <p>${top10.description}</p>
-            <p>Puntuación de Rotten Tomatoes: <span class="puntuacion">${top10.rt_score}</span></p>
+            <p class="description">${top10.description}</p>
+            <p class="description">Puntuación de Rotten Tomatoes: <span class="puntuacion">${top10.rt_score}</span></p>
           </div>
         </div>
       </div>
@@ -181,13 +184,15 @@ const mostrarAnimaciones = (data) => {
             const locationElem = document.createElement("section");
             locationElem.className = "contenedorHijo";
             locationElem.innerHTML = `<h2 class="titulo">${locaciones.name}</h2>
-        <article class="locaciones-img-container">
+        <article class="locaciones-img-container card-img-container">
           <img src="${locaciones.img}" alt="${locaciones.name}">
           <article class="info">
+          <div class="contenedor-caracteristicas">
             <p>Climate: <span class="vehicless_class">${locaciones.climate}</span></p>
             <p>Terrain: <span class="length">${locaciones.terrain}</span></p>
             <p>Sorface: <span class="pilot">${locaciones.sorface_water}</span></p>
             <p>Residents: <span class="pilot">${locaciones.residents}</span></p>
+            </div>
           </article>
         </article>
       `;
@@ -226,13 +231,15 @@ const mostrarAnimaciones = (data) => {
             const vehiculosElem = document.createElement("section");
             vehiculosElem.className = "contenedorHijo";
             vehiculosElem.innerHTML = `<h2 class="titulo">${vehicles.name}</h2>
-        <article class="vehiculos-img-container">
+        <article class="vehiculos-img-container card-img-container">
           <img src="${vehicles.img}" alt="${vehicles.name}">
           <article class="info">
+          <div class="contenedor-caracteristicas">
             <p>${vehicles.description}</p>
             <p>Vehicles_class: <span class="vehicless_class">${vehicles.vehicles_class}</span></p>
             <p>Length: <span class="length">${vehicles.length}</span></p>
             <p>Pilot: <span class="pilot">${vehicles.pilot.name}</span></p>
+            </div>
           </article>
         </article>
       `;

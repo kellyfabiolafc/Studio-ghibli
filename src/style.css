@@ -5,7 +5,7 @@ background-color: #A6CF6F;
   width: 100%;
   display: flex;
   align-items: center; /*alinea los elemntos dentro del header*/
-  justify-content: space-around;
+  justify-content: center;
   height: 150px;
   font-family: "Phudu";
 }
@@ -173,64 +173,43 @@ nav button {
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.pelicula-img-container {
-  position: relative; /*definimos el tipo de posicionamiento de un elemento */
-  /*posiciona el elemento de forma relativa a su posición original en el flujo normal del documento*/
-  display: flex;
-  justify-content: center;
 
+.contenedorHijo {
+  background-color: #fdfffd;
+  margin: 1.5%;
+  border-radius: 20px;
+  width: 350px;
+  height: 480px;
+  padding: 20px 0px;
+  box-shadow: 0px 4px 10px 0px rgba(226,186,229,.5);
 }
-
-.pelicula-img-container img {
-  display: block;
-  width: 320px;
-  height: 400px;
-  object-fit: cover;
-  border-style: solid;
-    border-width: 1px;
-    border-color: #d8bae5;
-    border-radius: 8px;
-}
-
-.pelicula-img-container .info {
-  position: absolute; /*posiciona el elemento de forma absoluta en relación al primer elemento padre (pelicula-img-container)*/
-  top: 0;
-  left: 15px;
-  bottom: 0;
-  right: 15px;
-  color: white;
-  background-color: rgba(14, 18, 17, 0.8);
-  display: none;
-  width: auto;
-  height: auto;
-  overflow: auto;
-  text-align: center;
-  padding: 15px;
-}
-.vehiculos-img-container {
+.card-img-container {
   position: relative;
+  margin: 20px; /* Agrega espacio alrededor del div de la imagen */
 }
-.vehiculos-img-container img {
-  display: block;
-  width: 320px;
-  height: 400px;
-  margin: 20px;
+.description{
+  padding: 20px 20px 0px 20px;
 }
-
-.vehiculos-img-container .info {
+.info {
   position: absolute;
   top: 0;
-  left: 20px;
-  bottom: 0;
-  right: 20px;
-  color: white;
-  background-color: rgba(14, 18, 17, 0.8);
-  display: none;
-  width: auto;
-  height: auto;
-  overflow: auto;
-  text-align: center;
-  padding: 20%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow:  auto;
+
+}
+
+.card-img-container img {
+  display: block;
+  width: 310px;
+  height:418px ;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.contenedor-caracteristicas{
+  padding: 5px 20px 20px 20px;
 }
 .vehiculos-img-container .info p {
   margin: 0;
@@ -240,40 +219,28 @@ nav button {
 .vehiculos-img-container .info p span {
   font-weight: bold;
 }
-.personajes-img-container {
-  position: relative;
+
+.contenedorBtn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 10px 0 20px;
 }
-.pelicula-img-container button {
+.btns button {
   background: #E7F2D2;
   color: #080808;
-  padding: 10px 10px;
+  border-color:#A6CF6F ;
+  padding: 5px ;
   border-radius: 50px;
-  width: 120px;
-  margin: auto;
-  height: 50px;
+  width: 80px;
+  /* margin: auto; */
+  height: 40px;
   font-family: "Phudu";
 }
-.personajes-img-container img {
-  display: block;
-  width: 320px;
-  height: 400px;
-  margin: 20px;
-}
-.personajes-img-container .info {
-  position: absolute;
-  top: 0;
-  left: 15px;
-  bottom: 0;
-  right: 15px;
-  color: white;
-  background-color: rgba(14, 18, 17, 0.8);
-  display: none;
-  width: auto;
-  height: auto;
-  overflow: auto;
-  text-align: center;
-  padding-top: 8em;
-}
+
+
+
 .pelicula-img-container .info p {
   margin: 0;
   line-height: 1.5;
@@ -284,12 +251,6 @@ nav button {
   font-weight: bold;
 }
 
-.contenedorBtn {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
-}
 
 .pelicula-img-container button:hover {
   background-color: #A6CF6F;
@@ -304,38 +265,7 @@ nav button {
 .personajes-img-container .info p span {
   font-weight: bold;
 }
-.locaciones-img-container {
-  position: relative;
-}
-.locaciones-img-container .info {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  bottom: 0;
-  right: 20px;
-  color: white;
-  background-color: rgba(14, 18, 17, 0.8);
-  display: none;
-  width: auto;
-  height: auto;
-  overflow: auto;
-  text-align: center;
-  padding: 20%;
-}
-.locaciones-img-container img {
-  display: block;
-  width: 320px;
-  height: 400px;
-  margin: 20px;
-}
-.contenedorHijo {
-  background-color: #fdfffd;
-  margin: 1.5%;
-  border-radius: 20px;
-  width: 387px;
-  padding: 20px 0px;
-  box-shadow: 0px 4px 10px 0px rgba(226,186,229,.5);
-}
+
 
 /*He incluido este media query para telefonos*/
 @media (max-width: 768.98px) {
@@ -350,7 +280,7 @@ nav button {
   }
 
   #subtitulo-general {
-    font-size: 150%;
+    font-size: 120%;
   }
   #Anuncio {
     font-size: 15px;
@@ -372,13 +302,17 @@ nav button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 150px;
     font-family: "Phudu";
   }
   header img {
-    width: 190px;
-    height: 210px;
+    width: 140px;
+    height: 160px;
   }
+  h1{
+    font-size: xx-large;
+  }
+  
 }
 /* dispositivos móviles y tablets con un ancho de pantalla máximo de 991.98 píxeles. 
 Esto significa que se aplica a dispositivos con una pantalla más pequeña que la de los ordenadores
