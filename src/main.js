@@ -62,7 +62,8 @@ const mostrarAnimaciones = (data) => {
     peliculaElem.querySelectorAll(".btnpersonajes").forEach((btn) => {
       btn.addEventListener("click", function (e) {
         // Por cada boton iterado se activara un addeventlis
-        volver.classList.remove("volveroculto"); //eliminamos la clase
+        buttonTop10.classList.add("top10oculto");
+        volver.classList.remove("volveroculto");
         selectvolver.classList.add("selectOculto");
         const characterContainer = document.querySelector(".main-container");
         characterContainer.innerHTML = "";
@@ -156,6 +157,7 @@ const mostrarAnimaciones = (data) => {
 
     peliculaElem.querySelectorAll(".btnlocaciones").forEach((button) => {
       button.addEventListener("click", function (e) {
+        buttonTop10.classList.add("top10oculto");
         volver.classList.remove("volveroculto");
         selectvolver.classList.add("selectOculto");
         const containerLocations = document.querySelector(".main-container");
@@ -203,6 +205,7 @@ const mostrarAnimaciones = (data) => {
 
     peliculaElem.querySelectorAll(".btnvehiculos").forEach((buttonTop10) => {
       buttonTop10.addEventListener("click", function (e) {
+        buttonTop10.classList.add("top10oculto");
         volver.classList.remove("volveroculto");
         selectvolver.classList.add("selectOculto");
         const animationContainer = document.querySelector(".main-container");
