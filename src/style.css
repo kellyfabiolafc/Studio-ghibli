@@ -257,7 +257,9 @@ nav button {
   line-height: 1.5;
   text-align: initial;
 }
-
+.puntuacion{
+  font-weight:  bold;
+}
 
 
 /*He incluido este media query para telefonos*/

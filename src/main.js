@@ -203,8 +203,8 @@ const mostrarAnimaciones = (data) => {
       });
     });
 
-    peliculaElem.querySelectorAll(".btnvehiculos").forEach((buttonTop10) => {
-      buttonTop10.addEventListener("click", function (e) {
+    peliculaElem.querySelectorAll(".btnvehiculos").forEach((button) => {
+      button.addEventListener("click", function (e) {
         buttonTop10.classList.add("top10oculto");
         volver.classList.remove("volveroculto");
         selectvolver.classList.add("selectOculto");
