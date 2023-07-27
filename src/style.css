@@ -1,17 +1,21 @@
 header {
-background-color: #A6CF6F;
+  background-color: #A6CF6F;
   color: #fdfffd;
   font-size: 150%;
   width: 100%;
   display: flex;
-  align-items: center; /*alinea los elemntos dentro del header*/
+  align-items: center;
   justify-content: center;
-  height: 150px;
+  height: 120px;
   font-family: "Phudu";
+  position: fixed;
+  top: 0;
+  z-index: 9999; /* Asigna un valor alto al z-index para que el header esté por encima del contenido */
 }
+
 header img {
-  width: 250px;
-  height: 150px;
+  width: 230px;
+  height: 120px;
   object-fit: cover;
 }
 h2 {
@@ -50,7 +54,8 @@ h2 {
 }
 
 body {
-  margin: 0px;
+
+  margin: 150px 0px 0px 0px ;
   padding: 0px;
   background-color: #E7F2D2;
   font-family: "Abel";
@@ -91,9 +96,9 @@ body {
 }
 #subtitulo-general {
   font-size: 200%;
-  margin: 2%;
   color: black;
   text-shadow: none;
+  margin: 160px 30px 40px 30px;
 }
 .main-container {
   display: flex;
@@ -211,13 +216,13 @@ nav button {
 .contenedor-caracteristicas{
   padding: 5px 20px 20px 20px;
 }
-.vehiculos-img-container .info p {
+.contenedor-caracteristicas span {
+  font-weight: bold;
+}
+.contenedor-caracteristicas p{
   margin: 0;
   line-height: 1.5;
   text-align: initial;
-}
-.vehiculos-img-container .info p span {
-  font-weight: bold;
 }
 
 .contenedorBtn {
@@ -241,30 +246,18 @@ nav button {
 
 
 
-.pelicula-img-container .info p {
-  margin: 0;
-  line-height: 1.5;
-  text-align: initial;
-}
-
-.pelicula-img-container .info p span {
-  font-weight: bold;
-}
-
 
 .pelicula-img-container button:hover {
   background-color: #A6CF6F;
   color: #E7F2D2;
 }
 
-.personajes-img-container .info p {
+.info p {
   margin: 0;
   line-height: 1.5;
   text-align: initial;
 }
-.personajes-img-container .info p span {
-  font-weight: bold;
-}
+
 
 
 /*He incluido este media query para telefonos*/
@@ -293,17 +286,6 @@ nav button {
   .contenedorHijo {
     /*background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);*/
     margin-bottom: 5%;
-  }
-  header {
-  background-color: #A6CF6F;;
-    color: #fdfffd;
-    font-size: 190%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    font-family: "Phudu";
   }
   header img {
     width: 140px;
