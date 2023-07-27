@@ -281,3 +281,12 @@ document.addEventListener("DOMContentLoaded", function () {
     mostrarAnimaciones(data.films);
   });
 });
+
+
+
+const elementosLogoIcono = document.querySelectorAll('.logo');
+elementosLogoIcono.forEach(elemento => {
+  elemento.addEventListener("click", function () {
+    mostrarAnimaciones(data.films);
+  });
+});
